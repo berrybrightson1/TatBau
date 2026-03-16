@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "title": "TAT Bau - Premium Haustüren | Delmenhorst",
+    "description": "TAT Bau: Hochwertige Haustüren mit modernem Design, Sicherheit und professioneller Montage. Fenster, Rollläden und Sonnenschutz. Konfigurieren Sie Ihre Tür online."
+  },
+  "nav": {
+    "home": "Startseite",
+    "doors": "Türen",
+    "about": "Über uns",
+    "pages": "Seiten",
+    "mega_menu": "Mega-Menü",
+    "product": "Produkt",
+    "living_rooms": "Wohnzimmer",
+    "solidwood": "Massivholz",
+    "contact": "Kontakt",
+    "search_placeholder": "Suchen",
+    "all_categories": "ALLE KATEGORIEN",
+    "wishlist": "Wunschzettel",
+    "compare": "Vergleichen",
+    "returns": "Lokales Unternehmen in Delmenhorst",
+    "delivery": "Professionelle Montage",
+    "support": "Hochwertige Materialien",
+    "products": "Produkte",
+    "gallery": "Galerie",
+    "configurator": "Tür gestalten",
+    "menu": "Menü",
+    "close": "Schließen"
+  },
+  "hero": {
+    "headline": "Premium Haustüren\nfür Ihr Zuhause",
+    "subline": "TAT Bau ist Spezialist für hochwertige Haustüren mit modernem Design, hoher Sicherheit und professioneller Montage. Außerdem: Fenster, Rollläden und Sonnenschutz für Wohn- und Gewerbeimmobilien.",
+    "cta": "Tür online gestalten",
+    "cta_whatsapp": "Beratung anfragen."
+  },
+  "trust_badges": {
+    "local": "Lokales Unternehmen in Delmenhorst",
+    "installation": "Professionelle Montage",
+    "materials": "Hochwertige Materialien",
+    "consultation": "Persönliche Beratung"
+  },
+  "door_section": {
+    "title": "Moderne Haustüren",
+    "text": "Ihre Haustür ist mehr als ein Zugang. Sie prägt den Charakter Ihres Hauses und spielt eine wichtige Rolle bei Sicherheit, Energieeffizienz und Architektur. TAT Bau bietet moderne Aluminium-Haustüren, die Langlebigkeit, Sicherheit und elegantes Design verbinden. Kunden können ihre Tür mit unserem Online-Konfigurator individuell gestalten. Ob minimalistisch-modern oder zeitlos klassisch – wir finden die passende Lösung.",
+    "cta": "Tür konfigurieren"
+  },
+  "door_benefits": {
+    "title": "Warum unsere Haustüren",
+    "modern_design": "Elegante Aluminiumtüren mit zeitgenössischer Architektur.",
+    "high_security": "Moderne Schließsysteme und optional Fingerprint-Zugang.",
+    "energy_efficiency": "Hervorragende Dämmung für Komfort und Energieeffizienz.",
+    "custom_design": "Farben, Griffe, Glaselemente und Oberflächen nach Ihren Wünschen.",
+    "cta": "Beratung per WhatsApp"
+  },
+  "configurator_section": {
+    "title": "Gestalten Sie Ihre Haustür online",
+    "text": "Mit unserem interaktiven Konfigurator erstellen Sie Ihre Wunschhaustür. Erkunden Sie Stile, Farben und Materialien. Anschließend berät Sie TAT Bau und übernimmt die professionelle Montage.",
+    "cta": "Konfigurator öffnen"
+  },
+  "products_section": {
+    "title": "Weitere Produkte",
+    "windows_title": "Fenster",
+    "windows": "Energieeffiziente Fensterlösungen.",
+    "roller_shutters_title": "Rollläden",
+    "roller_shutters": "Sichtschutz, Dämmung und Sicherheit.",
+    "exterior_blinds_title": "Außenjalousien",
+    "exterior_blinds": "Elegante Sonnenschutzsysteme.",
+    "glass_walls_title": "Glaswände",
+    "glass_walls": "Moderne Glasarchitektur.",
+    "sun_protection_title": "Sonnenschutz",
+    "sun_protection": "Sonnenschutz für mehr Komfort.",
+    "cta": "Beratung anfragen"
+  },
+  "work_section": {
+    "title": "Unser Leistungsspektrum",
+    "text": "TAT Bau ist auf die Montage moderner Bauelemente spezialisiert. Schwerpunkt: hochwertige Haustüren. Dazu Fenster, Sonnenschutz und Glasfassaden für Wohn- und Gewerbeimmobilien.",
+    "services": "Montage von: Haustüren, Fenstern, Sonnenschutz, Rollläden und Außenjalousien, Renovierung und Modernisierung",
+    "cta": "Projekt starten"
+  },
+  "features": {
+    "title": "Warum unsere Haustüren",
+    "quality": {
+      "title": "Modernes Design",
+      "text": "Elegante Aluminiumtüren mit zeitgenössischer Architektur."
+    },
+    "individual": {
+      "title": "Hohe Sicherheit",
+      "text": "Moderne Schließsysteme und optional Fingerprint-Zugang."
+    },
+    "service": {
+      "title": "Energieeffizienz",
+      "text": "Hervorragende Dämmung für Komfort und Energieeffizienz."
+    }
+  },
+  "reviews": {
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Von Hausbesitzern in der Region geschätzt",
+    "happy_customer": "Kunde",
+    "items": {
+      "1": {
+        "name": "Hervorragende Handwerksarbeit",
+        "location": "",
+        "rating": "5",
+        "text": "TAT Bau hat ein Sonderprojekt perfekt umgesetzt. Sehr empfehlenswert."
+      },
+      "2": {
+        "name": "Professionell und zuverlässig",
+        "location": "",
+        "rating": "5",
+        "text": "Sehr professioneller Service und saubere Montage."
+      },
+      "3": {
+        "name": "Tolle Erfahrung",
+        "location": "",
+        "rating": "5",
+        "text": "Schnelle Kommunikation und hochwertige Arbeit."
+      },
+      "4": {
+        "name": "Familie Schmidt",
+        "location": "Berlin",
+        "rating": "5",
+        "text": "Unsere neue Haustür von TAT Bau ist ein echter Blickfang. Qualität und Verarbeitung hervorragend. Absolute Empfehlung!"
+      },
+      "5": {
+        "name": "Thomas & Anna Weber",
+        "location": "Hamburg",
+        "rating": "5",
+        "text": "Wir haben alle Innentüren austauschen lassen. Der Service war schnell, sauber und professionell. Perfektes Ergebnis."
+      },
+      "6": {
+        "name": "Markus Hoffmann",
+        "location": "München",
+        "rating": "5",
+        "text": "Der Online-Konfigurator hat uns begeistert. Wir konnten unsere Tür genau nach unseren Vorstellungen gestalten."
+      }
+    }
+  },
+  "contact_strip": {
+    "title": "Bereit für Ihre neue Haustür?",
+    "text": "Gestalten Sie Ihre Tür im Konfigurator oder kontaktieren Sie TAT Bau für Beratung und Montage.",
+    "cta_design": "Tür gestalten",
+    "cta_whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "brand_description": "TAT Bau – Ihr Spezialist für Haustüren und professionelle Montage in Delmenhorst. Außerdem Fenster, Rollläden und Sonnenschutz.",
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "map_link": "Auf Karte anzeigen",
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten.",
+    "social": "Folgen Sie uns"
+  },
+  "not_found": {
+    "title": "Seite nicht gefunden",
+    "description": "Die angeforderte Seite existiert nicht oder wurde verschoben.",
+    "back": "Zur Startseite"
+  },
+  "pages": {
+    "produkte": {
+      "title": "Weitere Produkte",
+      "intro": "Neben Haustüren bietet TAT Bau ergänzende Produkte für Wohn- und Gewerbeimmobilien.",
+      "windows": "Fenster",
+      "windows_text": "Energieeffiziente Fensterlösungen.",
+      "roller_shutters": "Rollläden",
+      "roller_shutters_text": "Sichtschutz, Dämmung und Sicherheit.",
+      "exterior_blinds": "Außenjalousien",
+      "exterior_blinds_text": "Elegante Sonnenschutzsysteme.",
+      "glass_walls": "Glaswände",
+      "glass_walls_text": "Moderne Glasarchitektur.",
+      "sun_protection": "Sonnenschutz",
+      "sun_protection_text": "Mehr Komfort und Schattenspendung.",
+      "cta_teaser": "Sagen Sie uns, was Sie brauchen—wir beraten Sie zu Produkten, Maßen und Montage.",
+      "cta": "Beratung anfragen",
+      "configurator_cta": "Konfigurator öffnen"
+    },
+    "galerie": {
+      "title": "Galerie",
+      "intro": "Entdecken Sie unsere Tür-Montagen und Projekte. Klicken Sie auf ein Bild für Vollansicht, Zoom und Navigation.",
+      "contact_link": "Kontakt",
+      "contact_teaser": "für Referenzen oder einen Besichtigungstermin.",
+      "cta": "Beratung anfragen",
+      "items": {
+        "door_1": "Moderne Haustür",
+        "door_2": "Zeitgenössische Haustür",
+        "door_3": "Elegantes Eingangsdesign",
+        "door_4": "Aluminium-Haustür Montage",
+        "door_5": "Eingang mit Seitenteilen",
+        "door_6": "Premium Haustür Detail"
+      }
+    },
+    "ueber_uns": {
+      "title": "Über TAT Bau",
+      "subtitle": "Ihr Partner vor Ort für Haustüren und mehr",
+      "intro": "TAT Bau ist Spezialist für hochwertige Haustüren und professionelle Montage. Ihr Partner in Delmenhorst für Aluminium-Haustüren, Fenster, Rollläden und Sonnenschutz für Wohn- und Gewerbeimmobilien.",
+      "mission_title": "Was wir tun",
+      "mission": "Wir liefern, montieren und warten Premium-Haustüren, Fenster, Rollläden und Sonnenschutz. Von der Beratung über die Planung bis zur Montage und Nachsorge legen wir Wert auf Qualitätsmaterialien und saubere Ausführung—damit Ihr Objekt lange gut aussieht und funktioniert.",
+      "area_title": "Unser Einsatzgebiet",
+      "area": "Von Delmenhorst aus bedienen wir die Region Bremen und darüber hinaus. Ob Neubau oder Sanierung—wir bieten Besichtigung, Aufmaß und komplette Montage.",
+      "values_title": "Warum TAT Bau",
+      "value_1_title": "Qualität & Handwerk",
+      "value_1": "Wir arbeiten mit bewährten Herstellern und montieren nach hohen Standards—jedes Projekt soll dauerhaft und professionell sein.",
+      "value_2_title": "Nah & persönlich",
+      "value_2": "Als lokaler Betrieb sind wir gut erreichbar und reagieren schnell. Sie bekommen klare Beratung und einen Ansprechpartner von der Anfrage bis zur Fertigstellung.",
+      "value_3_title": "Aus einer Hand",
+      "value_3": "Von der Haustür über Fenster bis zu Rollläden und Sonnenschutz—Fassade und Sicherheit aus einer Hand.",
+      "visit_title": "Besuchen Sie uns",
+      "visit_text": "Wir besprechen Ihr Projekt gern persönlich, am Telefon oder per WhatsApp.",
+      "cta": "Tür gestalten",
+      "contact_page": "Kontakt",
+      "whatsapp_cta": "Beratung per WhatsApp"
+    },
+    "kontakt": {
+      "title": "Kontakt",
+      "intro": "Kontaktieren Sie uns für Beratung oder ein Angebot.",
+      "form_name": "Name",
+      "form_email": "E-Mail",
+      "form_message": "Nachricht",
+      "form_send": "Senden",
+      "form_heading": "Kontaktformular",
+      "location_heading": "Standort",
+      "open_in_maps": "In Google Maps öffnen",
+      "or_whatsapp": "Oder kontaktieren Sie uns direkt per WhatsApp"
+    },
+    "impressum": {
+      "title": "Impressum",
+      "content": "Rechtliche Angaben werden hier ergänzt."
+    },
+    "datenschutz": {
+      "title": "Datenschutz",
+      "content": "Datenschutzinhalt wird hier ergänzt."
+    }
+  },
+  "chat": {
+    "title": "Haufig gestellte Fragen",
+    "subtitle": "Wir helfen Ihnen gerne weiter",
+    "welcome": "Hallo! Wie kann ich Ihnen helfen? Wahlen Sie eine Frage oder tippen Sie Ihre eigene.",
+    "placeholder": "Frage eingeben...",
+    "fallback": "Für diese Frage kontaktieren Sie uns bitte unter info@tatbau.de oder per WhatsApp/Telefon unter +49 176 62161501.",
+    "close": "Schliessen",
+    "questions": {
+      "1": {
+        "q": "Welche Turarten bieten Sie an?",
+        "a": "Wir bieten ein umfangreiches Sortiment: Hausturen, Innenturen, Glasturen und passendes Zubehor. Alle Turen sind individuell konfigurierbar."
+      },
+      "2": {
+        "q": "Wie funktioniert der Tur-Konfigurator?",
+        "a": "Mit unserem Online-Konfigurator konnen Sie Ihre Wunschtur Schritt fur Schritt gestalten, von Material und Farbe bis hin zu Griffen und Glasoptionen."
+      },
+      "3": {
+        "q": "Wie lange dauert die Lieferung?",
+        "a": "Die Lieferzeit betragt je nach Modell und Konfiguration zwischen 4 und 8 Wochen. Standardmodelle sind oft schneller verfugbar."
+      },
+      "4": {
+        "q": "Bieten Sie Montage an?",
+        "a": "Ja, wir bieten einen professionellen Montageservice in ganz Deutschland. Unsere erfahrenen Teams sorgen fur eine fachgerechte Installation."
+      },
+      "5": {
+        "q": "Welche Garantie erhalte ich?",
+        "a": "Wir gewahren auf alle Turen eine umfassende Herstellergarantie. Die genaue Garantiedauer hangt vom jeweiligen Produkt ab und betragt mindestens 5 Jahre."
+      },
+      "6": {
+        "q": "Wie kann ich Sie kontaktieren?",
+        "a": "Sie erreichen uns per Telefon/WhatsApp unter +49 176 62161501, per E-Mail an info@tatbau.de oder über unser Kontaktformular."
+      }
+    }
+  }
+}

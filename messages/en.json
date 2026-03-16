@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "title": "TAT Bau - Premium Entrance Doors | Delmenhorst",
+    "description": "TAT Bau specializes in high-quality entrance doors with modern design, security features and professional installation. Windows, roller shutters and sun protection. Design your door online."
+  },
+  "nav": {
+    "home": "Home",
+    "doors": "Doors",
+    "about": "About",
+    "pages": "Pages",
+    "mega_menu": "Mega Menu",
+    "product": "Product",
+    "living_rooms": "Living Rooms",
+    "solidwood": "Solidwood",
+    "contact": "Contact",
+    "search_placeholder": "Search",
+    "all_categories": "ALL CATEGORIES",
+    "wishlist": "Wishlist",
+    "compare": "Compare",
+    "returns": "Local company in Delmenhorst",
+    "delivery": "Professional installation",
+    "support": "High-quality materials",
+    "products": "Products",
+    "gallery": "Gallery",
+    "configurator": "Design Your Door",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "headline": "Premium Entrance Doors\nDesigned for Your Home",
+    "subline": "TAT Bau specializes in high-quality entrance doors with modern design, advanced security features and professional installation. We also offer windows, roller shutters and sun protection systems for residential and commercial properties.",
+    "cta": "Design Your Door Online",
+    "cta_whatsapp": "Request Consultation."
+  },
+  "trust_badges": {
+    "local": "Local company in Delmenhorst",
+    "installation": "Professional installation",
+    "materials": "High-quality materials",
+    "consultation": "Personal consultation"
+  },
+  "door_section": {
+    "title": "Modern Entrance Doors",
+    "text": "Your entrance door is more than just an entry point. It defines the character of your home and plays an important role in security, energy efficiency and architectural design. TAT Bau offers modern aluminum entrance doors that combine durability, security and elegant design. Customers can design their door individually using our online configurator. Whether you prefer a minimalist modern design or a timeless classic style, we help you find the perfect solution for your home.",
+    "cta": "Start Door Configuration"
+  },
+  "door_benefits": {
+    "title": "Why Choose Our Entrance Doors",
+    "modern_design": "Elegant aluminum doors with contemporary architectural aesthetics.",
+    "high_security": "Advanced locking systems and optional fingerprint access solutions.",
+    "energy_efficiency": "Excellent insulation for improved indoor comfort and energy performance.",
+    "custom_design": "Choose colors, handles, glass elements and finishes to match your home.",
+    "cta": "Talk to Our Team on WhatsApp"
+  },
+  "configurator_section": {
+    "title": "Design Your Entrance Door Online",
+    "text": "Use our interactive door configurator to create your ideal entrance door. Explore different styles, colors and materials to find the perfect match for your home. Once you have designed your door, contact TAT Bau for consultation and professional installation.",
+    "cta": "Open Door Configurator"
+  },
+  "products_section": {
+    "title": "Additional Products",
+    "windows_title": "Windows",
+    "windows": "Energy-efficient window solutions for modern homes.",
+    "roller_shutters_title": "Roller Shutters",
+    "roller_shutters": "Privacy, insulation and security.",
+    "exterior_blinds_title": "Exterior Blinds",
+    "exterior_blinds": "Elegant sun shading systems.",
+    "glass_walls_title": "Glass Walls",
+    "glass_walls": "Modern architectural glass solutions.",
+    "sun_protection_title": "Sun Protection",
+    "sun_protection": "Improved indoor comfort and shading solutions.",
+    "cta": "Request Consultation"
+  },
+  "work_section": {
+    "title": "Our Work",
+    "text": "TAT Bau specializes in the installation of modern building elements. The company's primary focus is the installation of high-quality entrance doors. In addition, we install windows, shading systems and architectural glass elements for residential and commercial properties.",
+    "services": "Installation of: Entrance doors, Windows, Sun protection systems, Roller shutters and exterior blinds, Renovation and modernization projects",
+    "cta": "Start Your Project"
+  },
+  "features": {
+    "title": "Why Choose Our Entrance Doors",
+    "quality": {
+      "title": "Modern Design",
+      "text": "Elegant aluminum doors with contemporary architectural aesthetics."
+    },
+    "individual": {
+      "title": "High Security",
+      "text": "Advanced locking systems and optional fingerprint access solutions."
+    },
+    "service": {
+      "title": "Energy Efficiency",
+      "text": "Excellent insulation for improved indoor comfort and energy performance."
+    }
+  },
+  "reviews": {
+    "title": "What Our Customers Say",
+    "subtitle": "Trusted by homeowners across the region",
+    "happy_customer": "Customer",
+    "items": {
+      "1": {
+        "name": "Excellent workmanship",
+        "location": "",
+        "rating": "5",
+        "text": "TAT Bau completed a special installation project perfectly. Highly recommended."
+      },
+      "2": {
+        "name": "Professional and reliable",
+        "location": "",
+        "rating": "5",
+        "text": "Very professional service and clean installation."
+      },
+      "3": {
+        "name": "Great experience",
+        "location": "",
+        "rating": "5",
+        "text": "Fast communication and high-quality work."
+      },
+      "4": {
+        "name": "The Schmidt Family",
+        "location": "Berlin",
+        "rating": "5",
+        "text": "Our new front door from TAT Bau is a real eye-catcher. The quality and craftsmanship are outstanding. Highly recommended!"
+      },
+      "5": {
+        "name": "Thomas & Anna Weber",
+        "location": "Hamburg",
+        "rating": "5",
+        "text": "We had all interior doors replaced. The service was fast, clean and professional. Perfect result."
+      },
+      "6": {
+        "name": "Markus Hoffmann",
+        "location": "Munich",
+        "rating": "5",
+        "text": "The online configurator impressed us. We were able to design our door exactly to our specifications."
+      }
+    }
+  },
+  "contact_strip": {
+    "title": "Ready to Design Your New Door?",
+    "text": "Create your perfect entrance door using our configurator or contact TAT Bau for personal advice and installation.",
+    "cta_design": "Design Your Door",
+    "cta_whatsapp": "Chat on WhatsApp"
+  },
+  "footer": {
+    "brand_description": "TAT Bau – your specialist for premium entrance doors and professional installation in Delmenhorst. We also offer windows, roller shutters and sun protection.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "map_link": "View on Map",
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved.",
+    "social": "Follow Us"
+  },
+  "not_found": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "back": "Back to Home"
+  },
+  "pages": {
+    "produkte": {
+      "title": "Additional Products",
+      "intro": "Alongside our focus on entrance doors, TAT Bau offers complementary products for residential and commercial properties.",
+      "windows": "Windows",
+      "windows_text": "Energy-efficient window solutions for modern homes.",
+      "roller_shutters": "Roller Shutters",
+      "roller_shutters_text": "Privacy, insulation and security.",
+      "exterior_blinds": "Exterior Blinds",
+      "exterior_blinds_text": "Elegant sun shading systems.",
+      "glass_walls": "Glass Walls",
+      "glass_walls_text": "Modern architectural glass solutions.",
+      "sun_protection": "Sun Protection",
+      "sun_protection_text": "Improved indoor comfort and shading solutions.",
+      "cta_teaser": "Tell us what you need—we'll advise on products, dimensions and installation.",
+      "cta": "Request Consultation",
+      "configurator_cta": "Open Door Configurator"
+    },
+    "galerie": {
+      "title": "Gallery",
+      "intro": "Discover our door installations and projects. Click any image to view full size, zoom, and browse.",
+      "contact_link": "Contact us",
+      "contact_teaser": "for door installation references or to arrange a visit.",
+      "cta": "Request consultation",
+      "items": {
+        "door_1": "Modern entrance door",
+        "door_2": "Contemporary front door",
+        "door_3": "Elegant entrance design",
+        "door_4": "Aluminium entrance door installation",
+        "door_5": "Residential entrance with side panels",
+        "door_6": "Premium front door detail"
+      }
+    },
+    "ueber_uns": {
+      "title": "About TAT Bau",
+      "subtitle": "Your local partner for entrance doors and more",
+      "intro": "TAT Bau specializes in high-quality entrance doors and professional installation. We are your local partner in Delmenhorst for modern aluminum entrance doors, windows, roller shutters and sun protection systems for residential and commercial properties.",
+      "mission_title": "What we do",
+      "mission": "We supply, install and maintain premium entrance doors, windows, roller shutters and sun protection. From consultation and design to fitting and aftercare, we focus on quality materials and precise installation so your property looks great and performs for years.",
+      "area_title": "Where we work",
+      "area": "Based in Delmenhorst, we serve the Bremen region and beyond. Whether you are building new or upgrading an existing home or business, we offer on-site visits, measurements and full installation.",
+      "values_title": "Why choose us",
+      "value_1_title": "Quality & craft",
+      "value_1": "We work with trusted manufacturers and install to high standards so every job is durable and looks professional.",
+      "value_2_title": "Local & personal",
+      "value_2": "As a local business we are easy to reach and responsive. You get clear advice and a single point of contact from quote to completion.",
+      "value_3_title": "Full service",
+      "value_3": "From entrance doors to windows, roller shutters and sun protection—we can coordinate your facade and security in one place.",
+      "visit_title": "Visit us",
+      "visit_text": "We are happy to discuss your project in person or by phone and WhatsApp.",
+      "cta": "Design your door",
+      "contact_page": "Contact",
+      "whatsapp_cta": "Contact on WhatsApp"
+    },
+    "kontakt": {
+      "title": "Contact",
+      "intro": "Get in touch for consultation or to request a quote. We are happy to help.",
+      "form_name": "Name",
+      "form_email": "Email",
+      "form_message": "Message",
+      "form_send": "Send",
+      "form_heading": "Contact form",
+      "location_heading": "Location",
+      "open_in_maps": "Open in Google Maps",
+      "or_whatsapp": "Or contact us directly on WhatsApp"
+    },
+    "impressum": {
+      "title": "Imprint",
+      "content": "Legal information will be provided here."
+    },
+    "datenschutz": {
+      "title": "Privacy Policy",
+      "content": "Privacy policy content will be provided here."
+    }
+  },
+  "chat": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "We are happy to help",
+    "welcome": "Hello! How can I help you? Choose a question or type your own.",
+    "placeholder": "Type a question...",
+    "fallback": "For this question, please contact us at info@tatbau.de or via WhatsApp/phone at +49 176 62161501.",
+    "close": "Close",
+    "questions": {
+      "1": {
+        "q": "What types of doors do you offer?",
+        "a": "We offer a comprehensive range: front doors, interior doors, glass doors and matching accessories. All doors are individually configurable."
+      },
+      "2": {
+        "q": "How does the door configurator work?",
+        "a": "With our online configurator, you can design your dream door step by step, from material and color to handles and glass options."
+      },
+      "3": {
+        "q": "What is the delivery time?",
+        "a": "Delivery time is between 4 and 8 weeks depending on the model and configuration. Standard models are often available sooner."
+      },
+      "4": {
+        "q": "Do you offer installation?",
+        "a": "Yes, we offer professional installation services throughout Germany. Our experienced teams ensure proper installation."
+      },
+      "5": {
+        "q": "What guarantees do you provide?",
+        "a": "We provide a comprehensive manufacturer's warranty on all doors. The exact warranty period depends on the product and is at least 5 years."
+      },
+      "6": {
+        "q": "How can I contact you?",
+        "a": "You can reach us by phone or WhatsApp at +49 176 62161501, by email at info@tatbau.de, or via our contact form on the website."
+      }
+    }
+  }
+}
