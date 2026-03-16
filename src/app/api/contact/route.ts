@@ -2,8 +2,6 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { CONTACT } from "@/lib/constants";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const FROM_EMAIL =
   process.env.RESEND_FROM_EMAIL ?? "TAT Bau Website <onboarding@resend.dev>";
 
@@ -19,13 +17,15 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!process.env.RESEND_API_KEY) {
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
       return NextResponse.json(
         { error: "Email is not configured." },
         { status: 503 }
       );
     }
 
+    const resend = new Resend(apiKey);
     const { data, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: [CONTACT.email],

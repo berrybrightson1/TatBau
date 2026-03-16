@@ -19,14 +19,14 @@ export function GalleryLightbox({ images }: { images: GalleryImage[] }) {
 
   const goPrev = useCallback(() => {
     if (index === null) return;
-    setIndex((i) => (i <= 0 ? images.length - 1 : i - 1));
+    setIndex((i) => (i == null || i <= 0 ? images.length - 1 : i - 1));
     setZoom(1);
     setPosition({ x: 0, y: 0 });
   }, [index, images.length]);
 
   const goNext = useCallback(() => {
     if (index === null) return;
-    setIndex((i) => (i >= images.length - 1 ? 0 : i + 1));
+    setIndex((i) => (i == null || i >= images.length - 1 ? 0 : i + 1));
     setZoom(1);
     setPosition({ x: 0, y: 0 });
   }, [index, images.length]);
