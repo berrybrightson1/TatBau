@@ -7,6 +7,7 @@ import { Navbar } from "@/components/navigation/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
+import { WhatsAppModalProvider } from "@/components/whatsapp/WhatsAppModalProvider";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -63,10 +64,12 @@ export default async function LocaleLayout({
       <body className="bg-background text-foreground antialiased font-sans">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SmoothScrollProvider>
-            <Navbar />
-            <div className="min-h-screen overflow-x-hidden">{children}</div>
-            <Footer />
-            <ChatWidget />
+            <WhatsAppModalProvider>
+              <Navbar />
+              <div className="min-h-screen overflow-x-hidden">{children}</div>
+              <Footer />
+              <ChatWidget />
+            </WhatsAppModalProvider>
           </SmoothScrollProvider>
         </NextIntlClientProvider>
       </body>

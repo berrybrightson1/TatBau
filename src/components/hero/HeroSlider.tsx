@@ -86,7 +86,7 @@ export function HeroSlider() {
               href={CONTACT.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-black/80 hover:bg-black text-white font-semibold rounded-lg border-2 border-white/20 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto whitespace-nowrap min-h-[48px] sm:min-h-[52px] text-sm sm:text-base py-3 px-6 sm:py-3.5 sm:px-8"
+              className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold rounded-lg border-2 border-white/20 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto whitespace-nowrap min-h-[48px] sm:min-h-[52px] text-sm sm:text-base py-3 px-6 sm:py-3.5 sm:px-8"
             >
               <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
               {t("cta_whatsapp")}

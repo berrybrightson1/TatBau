@@ -140,7 +140,7 @@
   },
   "contact_strip": {
     "title": "Ready to Design Your New Door?",
-    "text": "Create your perfect entrance door using our configurator or contact TAT Bau for personal advice and installation.",
+    "text": "Create your perfect entrance door in just a few steps: use our online configurator to choose design, color, glass and hardware, then request a no-obligation quote. Prefer to talk it through? Contact TAT Bau for personal advice, on-site measurement and professional installation—we’re here to help you from idea to fitted door.",
     "cta_design": "Design Your Door",
     "cta_whatsapp": "Chat on WhatsApp"
   },
@@ -176,8 +176,14 @@
       "glass_walls_text": "Modern architectural glass solutions.",
       "sun_protection": "Sun Protection",
       "sun_protection_text": "Improved indoor comfort and shading solutions.",
+      "windows_detail": "TAT Bau supplies and installs energy-efficient windows for new builds and renovations. From modern tilt-and-turn designs to fixed and sliding options, we help you choose the right glazing, frames and finishes for thermal performance, sound insulation and durability. We take care of measurement, supply and professional installation so your windows look great and meet current standards.",
+      "roller_shutters_detail": "Our roller shutters provide privacy, thermal insulation and extra security for homes and commercial properties. Available in a range of materials and colours, they can be manual or motorised and are built to last. TAT Bau handles the full process: advice, measurement, supply and installation, so you get a solution that fits your building and your budget.",
+      "exterior_blinds_detail": "Exterior blinds from TAT Bau offer elegant sun shading and weather protection. They reduce heat gain in summer, protect against glare and can be combined with other facade elements. We advise on systems, dimensions and operation (manual or motorised), and provide professional installation for a clean, durable result.",
+      "glass_walls_detail": "Glass walls and facades create bright, modern spaces and connect indoors with outdoors. TAT Bau works with quality systems for fixed and openable glazing, including structural and sliding solutions. We advise on design, thermal and safety requirements, and handle supply and installation for residential and commercial projects.",
+      "sun_protection_detail": "From awnings and pergolas to facade-mounted systems, we offer sun protection that improves comfort and reduces cooling needs. TAT Bau helps you choose the right type, size and operation for your property, and provides professional installation so your shading performs well for years.",
       "cta_teaser": "Tell us what you need—we'll advise on products, dimensions and installation.",
       "cta": "Request Consultation",
+      "back_to_products": "Back to Products",
       "configurator_cta": "Open Door Configurator"
     },
     "galerie": {
@@ -285,5 +291,31 @@
         "a": "You can reach us by phone or WhatsApp at +49 176 62161501, by email at info@tatbau.de, or via our contact form on the website."
       }
     }
+  },
+  "whatsapp_modal": {
+    "title": "Inquiry via WhatsApp",
+    "intro": "Fill in your details below. You will be taken to WhatsApp to send your message to TAT Bau.",
+    "name": "Name",
+    "name_placeholder": "Your name",
+    "phone": "Phone",
+    "phone_placeholder": "e.g. +49 176 12345678",
+    "email": "Email (optional)",
+    "email_placeholder": "your@email.com",
+    "product": "Product interest (optional)",
+    "product_placeholder": "Select if relevant",
+    "products": {
+      "doors": "Entrance Doors",
+      "windows": "Windows",
+      "roller_shutters": "Roller Shutters",
+      "exterior_blinds": "Exterior Blinds",
+      "glass_walls": "Glass Walls",
+      "sun_protection": "Sun Protection",
+      "other": "Other / General inquiry"
+    },
+    "message": "Your message",
+    "message_placeholder": "Describe your project or question...",
+    "submit": "Open WhatsApp",
+    "close": "Close",
+    "error_required": "Required"
   }
 }

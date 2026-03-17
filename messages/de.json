@@ -140,7 +140,7 @@
   },
   "contact_strip": {
     "title": "Bereit für Ihre neue Haustür?",
-    "text": "Gestalten Sie Ihre Tür im Konfigurator oder kontaktieren Sie TAT Bau für Beratung und Montage.",
+    "text": "Gestalten Sie Ihre Wunschtür in wenigen Schritten: Nutzen Sie unseren Online-Konfigurator für Design, Farbe, Glas und Beschläge und fordern Sie ein unverbindliches Angebot an. Sie möchten lieber persönlich beraten werden? Kontaktieren Sie TAT Bau für individuelle Beratung, Aufmaß vor Ort und fachgerechte Montage—von der Idee bis zur eingebauten Tür sind wir für Sie da.",
     "cta_design": "Tür gestalten",
     "cta_whatsapp": "WhatsApp"
   },
@@ -176,8 +176,14 @@
       "glass_walls_text": "Moderne Glasarchitektur.",
       "sun_protection": "Sonnenschutz",
       "sun_protection_text": "Mehr Komfort und Schattenspendung.",
+      "windows_detail": "TAT Bau liefert und montiert energieeffiziente Fenster für Neubau und Sanierung. Von modernen Dreh-Kipp- bis zu Festverglasung und Schiebeelementen beraten wir Sie zu Verglasung, Rahmen und Oberflächen für Wärmeschutz, Schallschutz und Langlebigkeit. Aufmaß, Lieferung und fachgerechte Montage übernehmen wir für Sie.",
+      "roller_shutters_detail": "Unsere Rollläden sorgen für Sichtschutz, Wärmedämmung und zusätzliche Sicherheit an Wohn- und Gewerbeimmobilien. Erhältlich in verschiedenen Materialien und Farben, manuell oder motorisiert, und auf Langlebigkeit ausgelegt. TAT Bau übernimmt Beratung, Aufmaß, Lieferung und Montage.",
+      "exterior_blinds_detail": "Außenjalousien von TAT Bau bieten eleganten Sonnen- und Witterungsschutz. Sie reduzieren die Aufheizung im Sommer, mindern Blendung und lassen sich mit anderen Fassadenelementen kombinieren. Wir beraten zu Systemen, Maßen und Bedienung (manuell/motorisiert) und montieren fachgerecht.",
+      "glass_walls_detail": "Glaswände und Glasfassaden schaffen helle, moderne Räume und verbinden Innen und Außen. TAT Bau arbeitet mit qualitätsvollen Systemen für feste und öffenbare Verglasung inkl. Konstruktiv- und Schiebelösungen. Wir beraten zu Gestaltung, Wärme- und Sicherheitsanforderungen und übernehmen Lieferung und Montage.",
+      "sun_protection_detail": "Von Markisen und Pergolen bis zu fassadengebundenen Systemen bieten wir Sonnenschutz für mehr Komfort und geringeren Kühlbedarf. TAT Bau hilft bei der Wahl von Typ, Größe und Bedienung und übernimmt die fachgerechte Montage.",
       "cta_teaser": "Sagen Sie uns, was Sie brauchen—wir beraten Sie zu Produkten, Maßen und Montage.",
       "cta": "Beratung anfragen",
+      "back_to_products": "Zurück zu Produkten",
       "configurator_cta": "Konfigurator öffnen"
     },
     "galerie": {
@@ -285,5 +291,31 @@
         "a": "Sie erreichen uns per Telefon/WhatsApp unter +49 176 62161501, per E-Mail an info@tatbau.de oder über unser Kontaktformular."
       }
     }
+  },
+  "whatsapp_modal": {
+    "title": "Anfrage per WhatsApp",
+    "intro": "Tragen Sie unten Ihre Daten ein. Sie werden zu WhatsApp weitergeleitet, um Ihre Nachricht an TAT Bau zu senden.",
+    "name": "Name",
+    "name_placeholder": "Ihr Name",
+    "phone": "Telefon",
+    "phone_placeholder": "z. B. +49 176 12345678",
+    "email": "E-Mail (optional)",
+    "email_placeholder": "ihre@email.de",
+    "product": "Produktinteresse (optional)",
+    "product_placeholder": "Bei Bedarf auswählen",
+    "products": {
+      "doors": "Haustüren",
+      "windows": "Fenster",
+      "roller_shutters": "Rollläden",
+      "exterior_blinds": "Außenjalousien",
+      "glass_walls": "Glaswände",
+      "sun_protection": "Sonnenschutz",
+      "other": "Sonstiges / Allgemeine Anfrage"
+    },
+    "message": "Ihre Nachricht",
+    "message_placeholder": "Beschreiben Sie Ihr Projekt oder Ihre Frage...",
+    "submit": "WhatsApp öffnen",
+    "close": "Schließen",
+    "error_required": "Pflichtfeld"
   }
 }

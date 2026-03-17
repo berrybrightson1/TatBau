@@ -2,7 +2,6 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { CONFIGURATOR_URL, CONTACT } from "@/lib/constants";
-import { GalleryLightbox } from "@/components/gallery/GalleryLightbox";
 import {
   ArrowRight,
   MessageCircle,
@@ -12,15 +11,6 @@ import {
   Package,
 } from "lucide-react";
 
-const GALLERY_IMAGES = [
-  { src: "/images/gallery/gallery-1.jpg", altKey: "door_1" },
-  { src: "/images/gallery/gallery-2.jpg", altKey: "door_2" },
-  { src: "/images/gallery/gallery-3.jpg", altKey: "door_3" },
-  { src: "/images/gallery/gallery-4.jpg", altKey: "door_4" },
-  { src: "/images/gallery/gallery-5.jpg", altKey: "door_5" },
-  { src: "/images/gallery/gallery-6.jpg", altKey: "door_6" },
-];
-
 export default async function UeberUnsPage({
   params,
 }: {
@@ -29,12 +19,6 @@ export default async function UeberUnsPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("pages.ueber_uns");
-  const tGalerie = await getTranslations("pages.galerie");
-
-  const galleryImages = GALLERY_IMAGES.map((item) => ({
-    src: item.src,
-    caption: tGalerie(`items.${item.altKey}`),
-  }));
 
   return (
     <main className="min-h-[60vh] pt-28 sm:pt-32 pb-16 sm:pb-24">
@@ -105,17 +89,6 @@ export default async function UeberUnsPage({
         </div>
       </section>
 
-      {/* Our Work / Gallery */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 mb-16 sm:mb-20">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-2">
-          {t("our_work_title")}
-        </h2>
-        <p className="text-muted mb-8 max-w-2xl">
-          {t("our_work_intro")}
-        </p>
-        <GalleryLightbox images={galleryImages} />
-      </section>
-
       {/* Visit / Contact strip */}
       <section className="border-y border-white/10 bg-surface/40">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
@@ -168,7 +141,7 @@ export default async function UeberUnsPage({
             href={CONTACT.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 border border-white/20 hover:bg-white/5 font-semibold px-8 py-4 rounded-lg transition-colors duration-200 w-full sm:w-auto min-h-[52px]"
+            className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 w-full sm:w-auto min-h-[52px]"
           >
             <MessageCircle className="w-5 h-5" />
             {t("whatsapp_cta")}

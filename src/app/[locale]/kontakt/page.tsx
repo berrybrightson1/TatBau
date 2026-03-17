@@ -57,7 +57,7 @@ export default async function KontaktPage({
             href={CONTACT.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 min-h-[48px] transition-colors duration-200 w-full sm:w-auto"
+            className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold px-6 py-3 min-h-[48px] transition-colors duration-200 w-full sm:w-auto"
           >
             <MessageCircle className="w-5 h-5" />
             WhatsApp {CONTACT.phone}

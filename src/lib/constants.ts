@@ -3,6 +3,16 @@ export const CONFIGURATOR_URL =
 
 export const WHATSAPP_URL = "https://wa.me/4917662161501";
 
+/** Product key to detail page path (locale prefix added by Link). Doors use /turen; others use /produkte/[slug]. */
+export const PRODUCT_PATHS: Record<string, string> = {
+  doors: "/turen",
+  windows: "/produkte/windows",
+  roller_shutters: "/produkte/roller_shutters",
+  exterior_blinds: "/produkte/exterior_blinds",
+  glass_walls: "/produkte/glass_walls",
+  sun_protection: "/produkte/sun_protection",
+} as const;
+
 export const CONTACT = {
   phone: "+49 176 62161501",
   whatsapp: "https://wa.me/4917662161501",
