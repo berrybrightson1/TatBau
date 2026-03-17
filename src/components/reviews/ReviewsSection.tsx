@@ -7,14 +7,13 @@ import Image from "next/image";
 
 const REVIEW_IDS = ["1", "2", "3", "4", "5", "6"] as const;
 
-// Copyright-free portrait images (Unsplash) – replace with real customer photos when ready
 const AVATARS = [
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
-  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
-  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
-  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
-  "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop",
+  "/images/avatars/avatar-1.svg",
+  "/images/avatars/avatar-2.svg",
+  "/images/avatars/avatar-3.svg",
+  "/images/avatars/avatar-4.svg",
+  "/images/avatars/avatar-5.svg",
+  "/images/avatars/avatar-6.svg",
 ];
 
 export function ReviewsSection() {
@@ -53,17 +52,17 @@ export function ReviewsSection() {
                 }`}
                 aria-label={t(`items.${id}.name`)}
               >
-                {/* Avatar image */}
+                {/* Avatar – flat vector or Lucide fallback */}
                 <div
-                  className={`w-full h-full rounded-full overflow-hidden transition-all duration-300 ${
+                  className={`w-full h-full rounded-full overflow-hidden bg-surface border-2 border-white/10 flex items-center justify-center transition-all duration-300 ${
                     isActive
-                      ? "ring-2 ring-accent ring-offset-2 ring-offset-background"
-                      : "grayscale-[50%] opacity-60 hover:opacity-90"
+                      ? "ring-2 ring-accent ring-offset-2 ring-offset-background border-accent/50"
+                      : "grayscale-[30%] opacity-70 hover:opacity-95"
                   }`}
                 >
                   <Image
                     src={AVATARS[i]}
-                    alt={t(`items.${id}.name`)}
+                    alt=""
                     width={90}
                     height={90}
                     className="w-full h-full object-cover"

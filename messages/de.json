@@ -20,6 +20,7 @@
     "returns": "Lokales Unternehmen in Delmenhorst",
     "delivery": "Professionelle Montage",
     "support": "Hochwertige Materialien",
+    "consultation": "Persönliche Beratung",
     "products": "Produkte",
     "gallery": "Galerie",
     "configurator": "Tür gestalten",
@@ -57,7 +58,9 @@
     "cta": "Konfigurator öffnen"
   },
   "products_section": {
-    "title": "Weitere Produkte",
+    "title": "Unser Angebot",
+    "doors_title": "Haustüren",
+    "doors": "Premium-Aluminium-Haustüren mit modernem Design, Sicherheit und Energieeffizienz. Konfigurieren Sie Ihre Tür online.",
     "windows_title": "Fenster",
     "windows": "Energieeffiziente Fensterlösungen.",
     "roller_shutters_title": "Rollläden",
@@ -68,6 +71,7 @@
     "glass_walls": "Moderne Glasarchitektur.",
     "sun_protection_title": "Sonnenschutz",
     "sun_protection": "Sonnenschutz für mehr Komfort.",
+    "read_more": "Mehr erfahren",
     "cta": "Beratung anfragen"
   },
   "work_section": {
@@ -158,8 +162,10 @@
   },
   "pages": {
     "produkte": {
-      "title": "Weitere Produkte",
-      "intro": "Neben Haustüren bietet TAT Bau ergänzende Produkte für Wohn- und Gewerbeimmobilien.",
+      "title": "Unsere Produkte",
+      "intro": "Von Premium-Haustüren über Fenster, Rollläden bis Sonnenschutz—TAT Bau bietet das komplette Angebot für Wohn- und Gewerbeimmobilien.",
+      "doors": "Haustüren",
+      "doors_text": "Premium-Aluminium-Haustüren mit modernem Design, Sicherheit und Energieeffizienz. Konfigurieren Sie Ihre Tür online.",
       "windows": "Fenster",
       "windows_text": "Energieeffiziente Fensterlösungen.",
       "roller_shutters": "Rollläden",
@@ -204,6 +210,8 @@
       "value_2": "Als lokaler Betrieb sind wir gut erreichbar und reagieren schnell. Sie bekommen klare Beratung und einen Ansprechpartner von der Anfrage bis zur Fertigstellung.",
       "value_3_title": "Aus einer Hand",
       "value_3": "Von der Haustür über Fenster bis zu Rollläden und Sonnenschutz—Fassade und Sicherheit aus einer Hand.",
+      "our_work_title": "Unser Leistungsspektrum",
+      "our_work_intro": "Eine Auswahl unserer Tür-Montagen und Projekte. Klicken Sie auf ein Bild für die Vollansicht.",
       "visit_title": "Besuchen Sie uns",
       "visit_text": "Wir besprechen Ihr Projekt gern persönlich, am Telefon oder per WhatsApp.",
       "cta": "Tür gestalten",
@@ -231,8 +239,21 @@
       "content": "Datenschutzinhalt wird hier ergänzt."
     }
   },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": {
+      "1": { "q": "Welche Haustüren bieten Sie an?", "a": "Wir bieten Premium-Aluminium-Haustüren in vielen Varianten: modern, klassisch und individuell konfigurierbar. Alle Türen können Sie im Online-Konfigurator anpassen—Material, Farbe, Griffe und Verglasung." },
+      "2": { "q": "Wie funktioniert der Tür-Konfigurator?", "a": "Im Online-Konfigurator gestalten Sie Ihre Wunschtür Schritt für Schritt: Modell, Farbe, Oberfläche, Griff und Verglasung. Anschließend können Sie ein Angebot anfragen oder uns für Aufmaß und Montage kontaktieren." },
+      "3": { "q": "Wie lange dauern Lieferung und Montage?", "a": "Die Lieferzeit beträgt in der Regel 4–8 Wochen, abhängig von Modell und Ausstattung. Die Montage terminieren wir dann mit Ihnen. Bei bestimmten Modellen ist eine schnellere Lieferung möglich—sprechen Sie uns an." },
+      "4": { "q": "Montieren Sie die Türen selbst?", "a": "Ja. TAT Bau übernimmt die komplette Montage mit erfahrenen Monteuren. Wir sind in Delmenhorst, der Region Bremen und darüber hinaus im Einsatz. Dazu gehören Aufmaß, Lieferung, Einbau und Abnahme." },
+      "5": { "q": "Liefern Sie auch Fenster, Rollläden und Sonnenschutz?", "a": "Ja. Neben Haustüren liefern und montieren wir Fenster, Rollläden, Außenjalousien und Sonnenschutz für Wohn- und Gewerbeimmobilien—alles aus einer Hand." },
+      "6": { "q": "Welche Garantien geben Sie?", "a": "Unsere Türen haben die Herstellergarantie (in der Regel mindestens 5 Jahre). Die genauen Bedingungen hängen vom Produkt ab. Für unsere Montagequalität stehen wir ein; die Details besprechen wir beim Auftrag." },
+      "7": { "q": "Wie erhalte ich ein Angebot oder eine Beratung?", "a": "Rufen Sie uns an oder schreiben Sie per WhatsApp unter +49 176 62161501, E-Mail info@tatbau.de oder nutzen Sie das Kontaktformular. Wir vereinbaren gern einen Vor-Ort-Termin, nehmen Maß und erstellen ein unverbindliches Angebot." },
+      "8": { "q": "Arbeiten Sie für Privat- und Gewerbekunden?", "a": "Ja. Wir arbeiten für private Bauherren, Vermieter und Gewerbetreibende. Ob einzelne Haustür oder größere Objekte mit mehreren Einheiten oder Fassaden—wir koordinieren Lieferung und Montage." }
+    }
+  },
   "chat": {
-    "title": "Haufig gestellte Fragen",
+    "title": "Häufig gestellte Fragen",
     "subtitle": "Wir helfen Ihnen gerne weiter",
     "welcome": "Hallo! Wie kann ich Ihnen helfen? Wahlen Sie eine Frage oder tippen Sie Ihre eigene.",
     "placeholder": "Frage eingeben...",

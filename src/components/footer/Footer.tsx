@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
@@ -12,6 +13,8 @@ import {
 import { CONTACT, CONFIGURATOR_URL } from "@/lib/constants";
 import { LanguageToggle } from "@/components/navigation/LanguageToggle";
 
+const LOGO_SRC = "/images/logo/300h/Asset-2-300x.webp";
+
 export function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
@@ -24,8 +27,14 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand column */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="text-2xl font-bold tracking-tight">
-              TAT Bau
+            <Link href="/" className="inline-block select-none" aria-label="TAT Bau Home">
+              <Image
+                src={LOGO_SRC}
+                alt="TAT Bau"
+                width={140}
+                height={47}
+                className="h-9 w-auto sm:h-10"
+              />
             </Link>
             <p className="mt-4 text-muted text-sm leading-relaxed max-w-xs">
               {t("brand_description")}
@@ -43,20 +52,10 @@ export function Footer() {
                   {nav("home")}
                 </Link>
               </li>
-              <li>
-                <a
-                  href={CONFIGURATOR_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted hover:text-accent transition-colors duration-200"
-                >
-                  {nav("doors")}
-                </a>
-              </li>
               {[
+                { href: "/ueber-uns", label: nav("about") },
                 { href: "/produkte", label: nav("products") },
                 { href: "/galerie", label: nav("gallery") },
-                { href: "/ueber-uns", label: nav("about") },
                 { href: "/kontakt", label: nav("contact") },
               ].map((link) => (
                 <li key={link.href}>
@@ -153,14 +152,15 @@ export function Footer() {
             </div>
 
             {/* Small OSM embed */}
-            <div className="overflow-hidden border border-white/5">
+            <div className="relative overflow-hidden rounded-lg border border-white/10 aspect-video min-h-[140px] w-full">
               <iframe
-                title="OpenStreetMap"
+                title="OpenStreetMap – TAT Bau location"
                 src={CONTACT.mapUrl}
                 width="100%"
-                height="150"
-                className="border-0 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+                height="100%"
+                className="absolute inset-0 w-full h-full border-0"
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
           </div>

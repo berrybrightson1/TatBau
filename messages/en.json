@@ -20,6 +20,7 @@
     "returns": "Local company in Delmenhorst",
     "delivery": "Professional installation",
     "support": "High-quality materials",
+    "consultation": "Personal consultation",
     "products": "Products",
     "gallery": "Gallery",
     "configurator": "Design Your Door",
@@ -57,7 +58,9 @@
     "cta": "Open Door Configurator"
   },
   "products_section": {
-    "title": "Additional Products",
+    "title": "Our Offerings",
+    "doors_title": "Entrance Doors",
+    "doors": "Premium aluminium entrance doors with modern design, security and energy efficiency. Configure your door online.",
     "windows_title": "Windows",
     "windows": "Energy-efficient window solutions for modern homes.",
     "roller_shutters_title": "Roller Shutters",
@@ -68,6 +71,7 @@
     "glass_walls": "Modern architectural glass solutions.",
     "sun_protection_title": "Sun Protection",
     "sun_protection": "Improved indoor comfort and shading solutions.",
+    "read_more": "See More",
     "cta": "Request Consultation"
   },
   "work_section": {
@@ -158,8 +162,10 @@
   },
   "pages": {
     "produkte": {
-      "title": "Additional Products",
-      "intro": "Alongside our focus on entrance doors, TAT Bau offers complementary products for residential and commercial properties.",
+      "title": "Our Products",
+      "intro": "From premium entrance doors to windows, roller shutters and sun protection—TAT Bau offers a full range for residential and commercial properties.",
+      "doors": "Entrance Doors",
+      "doors_text": "Premium aluminium entrance doors with modern design, security and energy efficiency. Configure your door online.",
       "windows": "Windows",
       "windows_text": "Energy-efficient window solutions for modern homes.",
       "roller_shutters": "Roller Shutters",
@@ -204,6 +210,8 @@
       "value_2": "As a local business we are easy to reach and responsive. You get clear advice and a single point of contact from quote to completion.",
       "value_3_title": "Full service",
       "value_3": "From entrance doors to windows, roller shutters and sun protection—we can coordinate your facade and security in one place.",
+      "our_work_title": "Our Work",
+      "our_work_intro": "A selection of our door installations and projects. Click any image to view full size.",
       "visit_title": "Visit us",
       "visit_text": "We are happy to discuss your project in person or by phone and WhatsApp.",
       "cta": "Design your door",
@@ -229,6 +237,19 @@
     "datenschutz": {
       "title": "Privacy Policy",
       "content": "Privacy policy content will be provided here."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": {
+      "1": { "q": "What types of entrance doors do you offer?", "a": "We offer premium aluminium entrance doors in a wide range of designs: modern, classic, and custom configurations. All doors can be tailored via our online configurator—materials, colors, handles, and glass options." },
+      "2": { "q": "How does the door configurator work?", "a": "Use our online configurator to design your door step by step: choose model, color, finish, handle set, and glazing. You can request a quote or contact us for professional measurement and installation." },
+      "3": { "q": "What is the typical delivery and installation time?", "a": "Delivery usually takes 4–8 weeks depending on model and options. We then schedule installation at your convenience. Urgent orders may be possible for selected models—please ask us." },
+      "4": { "q": "Do you install the doors yourselves?", "a": "Yes. TAT Bau provides full installation by experienced fitters. We serve Delmenhorst, the Bremen region, and beyond. Installation includes measurement, delivery, fitting, and a final check." },
+      "5": { "q": "Do you also supply windows, roller shutters and sun protection?", "a": "Yes. Besides entrance doors we supply and install windows, roller shutters, exterior blinds, and sun protection systems for residential and commercial properties—all from one contact." },
+      "6": { "q": "What guarantees or warranties do you offer?", "a": "Our doors come with the manufacturer’s warranty (typically at least 5 years). Exact terms depend on the product. We stand behind our installation quality and will explain warranty details when you order." },
+      "7": { "q": "How can I get a quote or book a consultation?", "a": "Call or WhatsApp us on +49 176 62161501, email info@tatbau.de, or use the contact form. We can arrange an on-site visit, take measurements, and provide a no-obligation quote." },
+      "8": { "q": "Do you work with private and commercial clients?", "a": "Yes. We work with homeowners, landlords, and commercial clients. Whether single entrance doors or larger projects (e.g. multiple units or facades), we can coordinate supply and installation." }
     }
   },
   "chat": {

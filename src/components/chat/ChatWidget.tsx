@@ -10,10 +10,11 @@ interface Message {
   text: string;
 }
 
-const FAQ_IDS = ["1", "2", "3", "4", "5", "6"] as const;
+const FAQ_IDS = ["1", "2", "3", "4", "5", "6", "7", "8"] as const;
 
 export function ChatWidget() {
   const t = useTranslations("chat");
+  const tFaq = useTranslations("faq");
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -34,8 +35,8 @@ export function ChatWidget() {
   }, [messages]);
 
   function handleFaqClick(id: string) {
-    const question = t(`questions.${id}.q`);
-    const answer = t(`questions.${id}.a`);
+    const question = tFaq(`items.${id}.q`);
+    const answer = tFaq(`items.${id}.a`);
     setMessages((prev) => [
       ...prev,
       { role: "user", text: question },
@@ -94,9 +95,10 @@ export function ChatWidget() {
             </Popover.Close>
           </div>
 
-          {/* Messages area – scrollable */}
+          {/* Messages area – scrollable; stop wheel so Lenis doesn't capture it */}
           <div
             ref={scrollRef}
+            onWheel={(e) => e.stopPropagation()}
             className="flex-1 min-h-0 overflow-y-auto overflow-x-hidden overscroll-contain px-5 py-4 flex flex-col gap-3"
           >
             {messages.map((msg, i) => (
@@ -112,16 +114,16 @@ export function ChatWidget() {
               </div>
             ))}
 
-            {/* Suggested questions */}
+            {/* All FAQ questions – same content as main FAQ */}
             {messages.length <= 1 && (
               <div className="flex flex-col gap-2 mt-2">
                 {FAQ_IDS.map((id) => (
                   <button
                     key={id}
                     onClick={() => handleFaqClick(id)}
-                    className="text-left text-sm px-4 py-2.5 bg-white/5 hover:bg-accent/10 text-foreground/80 hover:text-foreground border border-white/5 hover:border-accent/20 transition-colors duration-200 flex items-center justify-between gap-2"
+                    className="text-left text-sm px-4 py-2.5 bg-white/5 hover:bg-accent/10 text-foreground/80 hover:text-foreground border border-white/5 hover:border-accent/20 transition-colors duration-200 flex items-center justify-between gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
                   >
-                    <span>{t(`questions.${id}.q`)}</span>
+                    <span>{tFaq(`items.${id}.q`)}</span>
                     <ChevronRight className="w-3.5 h-3.5 flex-shrink-0 text-accent" />
                   </button>
                 ))}

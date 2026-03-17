@@ -41,7 +41,7 @@ export function HeroSlider() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section className="relative min-h-[72vh] sm:h-screen w-full overflow-hidden">
+    <section className="relative h-[70vh] min-h-[320px] max-h-[700px] w-full overflow-hidden">
       {/* Carousel slides */}
       <div className="h-full" ref={emblaRef}>
         <div className="flex h-full">
@@ -51,7 +51,7 @@ export function HeroSlider() {
                 src={slide.src}
                 alt={slide.alt}
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 priority={i === 0}
                 sizes="100vw"
               />
@@ -63,32 +63,32 @@ export function HeroSlider() {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
 
-      {/* Content overlay */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="max-w-3xl w-full mx-auto px-4 sm:px-8 md:px-16 lg:px-20 flex flex-col items-center text-center pointer-events-auto">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.15] mb-4 sm:mb-6 whitespace-pre-line text-center">
+      {/* Content overlay – far left, aligned with page content */}
+      <div className="absolute inset-0 flex items-center pointer-events-none">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 flex flex-col items-start text-left pointer-events-auto">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.15] mb-3 sm:mb-5 whitespace-pre-line text-left">
             {t("headline")}
           </h1>
-          <p className="text-xs sm:text-base md:text-lg text-foreground/70 max-w-xl mx-auto mb-6 sm:mb-10 text-center px-1">
+          <p className="text-xs sm:text-sm md:text-base text-foreground/80 max-w-lg mb-5 sm:mb-8 text-left">
             {t("subline")}
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-sm sm:max-w-xl mx-auto">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-md">
             <a
               href={CONFIGURATOR_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg shadow-lg shadow-accent/20 hover:shadow-accent/30 active:scale-[0.98] transition-all duration-200 w-full sm:flex-1 sm:min-w-0 whitespace-nowrap min-h-[52px] sm:min-h-[56px] text-sm sm:text-base py-4 pl-10 pr-10 sm:py-5 sm:pl-10 sm:pr-10"
+              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg shadow-lg shadow-accent/20 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto whitespace-nowrap min-h-[48px] sm:min-h-[52px] text-sm sm:text-base py-3 px-6 sm:py-3.5 sm:px-8"
             >
               {t("cta")}
-              <ArrowRight className="w-5 h-5 flex-shrink-0" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
             </a>
             <a
               href={CONTACT.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 bg-black hover:bg-black/90 text-white font-semibold rounded-lg border-2 border-white/20 shadow-lg hover:border-white/30 active:scale-[0.98] transition-all duration-200 w-full sm:flex-1 sm:min-w-0 whitespace-nowrap min-h-[52px] sm:min-h-[56px] text-sm sm:text-base py-4 pl-10 pr-10 sm:py-5 sm:pl-10 sm:pr-10"
+              className="inline-flex items-center justify-center gap-2 bg-black/80 hover:bg-black text-white font-semibold rounded-lg border-2 border-white/20 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto whitespace-nowrap min-h-[48px] sm:min-h-[52px] text-sm sm:text-base py-3 px-6 sm:py-3.5 sm:px-8"
             >
-              <MessageCircle className="w-5 h-5 flex-shrink-0" />
+              <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
               {t("cta_whatsapp")}
             </a>
           </div>
@@ -98,21 +98,21 @@ export function HeroSlider() {
       {/* Prev / Next arrows */}
       <button
         onClick={scrollPrev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 text-white/60 hover:text-white transition-colors"
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 p-2 sm:p-3 text-white/70 hover:text-white transition-colors touch-manipulation"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-8 h-8" />
+        <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
       </button>
       <button
         onClick={scrollNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 text-white/60 hover:text-white transition-colors"
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 p-2 sm:p-3 text-white/70 hover:text-white transition-colors touch-manipulation"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-8 h-8" />
+        <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
       </button>
 
       {/* Dot indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
         {SLIDES.map((_, i) => (
           <button
             key={i}

@@ -5,12 +5,12 @@
    ============================================ */
 
 @theme inline {
-  --color-background: #000000;
-  --color-surface: #1e1e1e;
+  --color-background: #232323;
+  --color-surface: #474747;
   --color-foreground: #f5f5f5;
   --color-muted: #a3a3a3;
-  --color-accent: #2183c8;
-  --color-accent-hover: #1a6ba3;
+  --color-accent: #efa625;
+  --color-accent-hover: #efa625;
   --font-sans: var(--font-dm-sans);
 }
 
@@ -23,19 +23,30 @@ body {
 
 /* ---- Custom selection highlight ---- */
 ::selection {
-  background-color: #2183c8;
-  color: #ffffff;
+  background-color: #efa625;
+  color: #000000;
 }
 
 ::-moz-selection {
-  background-color: #2183c8;
-  color: #ffffff;
+  background-color: #efa625;
+  color: #000000;
+}
+
+/* Don't show selection overlay on images (e.g. logo) */
+img::selection {
+  background: transparent;
+  color: inherit;
+}
+
+img::-moz-selection {
+  background: transparent;
+  color: inherit;
 }
 
 /* ---- Custom thin scrollbars ---- */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #2183c8 #1e1e1e;
+  scrollbar-color: #efa625 #474747;
 }
 
 ::-webkit-scrollbar {
@@ -44,16 +55,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e1e1e;
+  background: #474747;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2183c8;
+  background: #efa625;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #1a6ba3;
+  background: #efa625;
 }
 
 /* ---- Strip native focus outlines, apply custom ---- */

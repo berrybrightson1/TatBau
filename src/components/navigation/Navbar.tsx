@@ -1,12 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Menu, Phone, Mail, ArrowRight, Check } from "lucide-react";
 import { LanguageToggle } from "./LanguageToggle";
 import { MobileMenu } from "./MobileMenu";
 import { CONFIGURATOR_URL, CONTACT } from "@/lib/constants";
+
+const LOGO_SRC = "/images/logo/300h/Asset-2-300x.webp";
 
 export function Navbar() {
   const t = useTranslations("nav");
@@ -23,9 +26,9 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/", label: t("home") },
+    { href: "/ueber-uns", label: t("about") },
     { href: "/produkte", label: t("products") },
     { href: "/galerie", label: t("gallery") },
-    { href: "/ueber-uns", label: t("about") },
     { href: "/kontakt", label: t("contact") },
   ];
 
@@ -40,35 +43,21 @@ export function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2.5 transition-opacity hover:opacity-90 shrink-0"
+          className="flex items-center transition-opacity hover:opacity-90 shrink-0 select-none"
+          aria-label="TAT Bau Home"
         >
-          <div className="text-accent border-2 border-accent rounded-sm p-1">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              className="w-7 h-7 sm:w-8 sm:h-8"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-              <polyline points="9 22 9 12 15 12 15 22" />
-            </svg>
-          </div>
-          <span className="text-foreground font-[800] text-lg sm:text-xl leading-none tracking-tight">
-            TAT Bau
-          </span>
+          <Image
+            src={LOGO_SRC}
+            alt="TAT Bau"
+            width={120}
+            height={40}
+            className="h-8 w-auto sm:h-9"
+            priority
+          />
         </Link>
 
         {/* Desktop nav links */}
         <nav className="hidden lg:flex items-center gap-0.5">
-          <a
-            href={CONFIGURATOR_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2.5 text-[13px] font-semibold uppercase tracking-wide text-muted hover:text-foreground transition-colors rounded"
-          >
-            {t("doors")}
-          </a>
           {navLinks.map((link) => {
             const isActive =
               pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
@@ -143,6 +132,10 @@ export function Navbar() {
           <span className="flex items-center gap-1.5">
             <Check className="w-3.5 h-3.5 text-accent" />
             {t("support")}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <Check className="w-3.5 h-3.5 text-accent" />
+            {t("consultation")}
           </span>
         </div>
       </div>

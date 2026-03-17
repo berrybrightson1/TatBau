@@ -30,6 +30,9 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    icons: {
+      icon: "/images/logo/300h/Assetfav-icon@300x.webp",
+    },
     alternates: {
       languages: {
         "de-DE": "/de",
