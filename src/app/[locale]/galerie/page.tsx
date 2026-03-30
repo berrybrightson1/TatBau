@@ -5,13 +5,22 @@ import { MessageCircle } from "lucide-react";
 import { CONTACT } from "@/lib/constants";
 import { GalleryLightbox } from "@/components/gallery/GalleryLightbox";
 
-const GALLERY_IMAGES = [
+const GALLERY_IMAGES: Array<{ src: string; altKey?: string }> = [
   { src: "/images/gallery/gallery-1.jpg", altKey: "door_1" },
   { src: "/images/gallery/gallery-2.jpg", altKey: "door_2" },
   { src: "/images/gallery/gallery-3.jpg", altKey: "door_3" },
   { src: "/images/gallery/gallery-4.jpg", altKey: "door_4" },
   { src: "/images/gallery/gallery-5.jpg", altKey: "door_5" },
   { src: "/images/gallery/gallery-6.jpg", altKey: "door_6" },
+  { src: "/images/gallery/Glass-Walls.png" },
+  { src: "/images/gallery/new-galleryimages (1).png" },
+  { src: "/images/gallery/new-galleryimages (2).png" },
+  { src: "/images/gallery/new-galleryimages (3).png" },
+  { src: "/images/gallery/new-galleryimages (4).png" },
+  { src: "/images/gallery/new-galleryimages (5).png" },
+  { src: "/images/gallery/new-galleryimages (6).png" },
+  { src: "/images/gallery/new-galleryimages (7).png" },
+  { src: "/images/gallery/new-galleryimages (8).png" },
 ];
 
 export default async function GaleriePage({
@@ -23,9 +32,9 @@ export default async function GaleriePage({
   setRequestLocale(locale);
   const t = await getTranslations("pages.galerie");
 
-  const images = GALLERY_IMAGES.map((item) => ({
+  const images = GALLERY_IMAGES.map((item, index) => ({
     src: item.src,
-    caption: t(`items.${item.altKey}`),
+    caption: item.altKey ? t(`items.${item.altKey}`) : `${t("title")} ${index + 1}`,
   }));
 
   return (
@@ -54,7 +63,7 @@ export default async function GaleriePage({
             href={CONTACT.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition-colors duration-200 w-full sm:w-auto min-h-[52px] sm:min-h-0"
+            className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-8 py-4 rounded-lg shadow-lg transition-colors duration-200 w-full sm:w-auto min-h-[52px] sm:min-h-0"
           >
             <MessageCircle className="w-5 h-5" />
             {t("cta")}

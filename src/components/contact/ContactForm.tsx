@@ -97,7 +97,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:opacity-60 text-white font-semibold px-6 py-3 min-h-[48px] transition-colors duration-200 w-full sm:w-auto"
+        className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:opacity-60 text-background font-semibold px-6 py-3 min-h-[48px] transition-colors duration-200 w-full sm:w-auto"
       >
         {status === "sending" ? (
           <>

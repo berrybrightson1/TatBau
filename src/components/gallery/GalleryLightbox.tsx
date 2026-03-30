@@ -108,8 +108,26 @@ export function GalleryLightbox({ images }: { images: GalleryImage[] }) {
       {current && (
         <div
           className="fixed inset-0 z-50 bg-black/95 flex flex-col"
-          onClick={(e) => e.target === e.currentTarget && close()}
+          onClick={close}
         >
+          {/* Side navigation arrows (always visible while open) */}
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); goPrev(); }}
+            className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-colors touch-manipulation"
+            aria-label="Previous image"
+          >
+            <ChevronLeft className="w-7 h-7 sm:w-8 sm:h-8" />
+          </button>
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); goNext(); }}
+            className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-colors touch-manipulation"
+            aria-label="Next image"
+          >
+            <ChevronRight className="w-7 h-7 sm:w-8 sm:h-8" />
+          </button>
+
           <div className="absolute top-0 left-0 right-0 flex items-center justify-between p-3 sm:p-4 z-10 min-h-[56px]">
             <button
               type="button"
@@ -161,7 +179,6 @@ export function GalleryLightbox({ images }: { images: GalleryImage[] }) {
                 fill
                 className="object-contain select-none"
                 sizes="100vw"
-                onClick={(e) => e.stopPropagation()}
                 draggable={false}
                 priority
               />

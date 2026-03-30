@@ -72,7 +72,7 @@ export function ReviewsSection() {
                 {/* Plus badge on inactive avatars */}
                 {!isActive && (
                   <span className="absolute -bottom-0.5 -right-0.5 w-[18px] h-[18px] sm:w-5 sm:h-5 bg-accent rounded-full flex items-center justify-center shadow-md">
-                    <Plus className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" strokeWidth={3} />
+                    <Plus className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-background" strokeWidth={3} />
                   </span>
                 )}
               </button>

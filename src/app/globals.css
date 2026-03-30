@@ -9,8 +9,9 @@
   --color-surface: #474747;
   --color-foreground: #f5f5f5;
   --color-muted: #a3a3a3;
-  --color-accent: #efa625;
-  --color-accent-hover: #efa625;
+  /* RAL 1018 Zinc Yellow */
+  --color-accent: #ebd346;
+  --color-accent-hover: #d4bc38;
   --font-sans: var(--font-dm-sans);
 }
 
@@ -23,13 +24,13 @@ body {
 
 /* ---- Custom selection highlight ---- */
 ::selection {
-  background-color: #efa625;
-  color: #000000;
+  background-color: #ebd346;
+  color: #232323;
 }
 
 ::-moz-selection {
-  background-color: #efa625;
-  color: #000000;
+  background-color: #ebd346;
+  color: #232323;
 }
 
 /* Don't show selection overlay on images (e.g. logo) */
@@ -46,7 +47,7 @@ img::-moz-selection {
 /* ---- Custom thin scrollbars ---- */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #efa625 #474747;
+  scrollbar-color: #ebd346 #474747;
 }
 
 ::-webkit-scrollbar {
@@ -59,12 +60,12 @@ img::-moz-selection {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #efa625;
+  background: #ebd346;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #efa625;
+  background: #d4bc38;
 }
 
 /* ---- Strip native focus outlines, apply custom ---- */

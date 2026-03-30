@@ -112,7 +112,7 @@ export default async function ProduktePage({
             href={CONTACT.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 w-full sm:w-auto min-h-[52px]"
+            className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-8 py-4 rounded-lg transition-colors duration-200 w-full sm:w-auto min-h-[52px]"
           >
             <MessageCircle className="w-5 h-5" />
             {t("cta")}

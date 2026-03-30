@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "TAT Bau - Premium Haustüren | Delmenhorst",
-    "description": "TAT Bau: Hochwertige Haustüren mit modernem Design, Sicherheit und professioneller Montage. Fenster, Rollläden und Sonnenschutz. Konfigurieren Sie Ihre Tür online."
+    "title": "TAT Bau - Haustüren, Fenster & Rollläden | Delmenhorst",
+    "description": "TAT Bau liefert und montiert Premium-Haustüren, energieeffiziente Fenster und Rollläden für Wohn- und Gewerbeimmobilien in Delmenhorst und der Region. Tür online gestalten oder Beratung anfragen."
   },
   "nav": {
     "home": "Startseite",
@@ -28,10 +28,16 @@
     "close": "Schließen"
   },
   "hero": {
-    "headline": "Premium Haustüren\nfür Ihr Zuhause",
-    "subline": "TAT Bau ist Spezialist für hochwertige Haustüren mit modernem Design, hoher Sicherheit und professioneller Montage. Außerdem: Fenster, Rollläden und Sonnenschutz für Wohn- und Gewerbeimmobilien.",
-    "cta": "Tür online gestalten",
-    "cta_whatsapp": "Beratung anfragen."
+    "slide_0_headline": "Premium Haustüren\nfür Ihr Zuhause",
+    "slide_0_subline": "Gestalten Sie Ihre Aluminium-Haustür online im Konfigurator—moderne Sicherheit, Energieeffizienz und professionelle Montage durch TAT Bau in Delmenhorst.",
+    "slide_0_cta": "Tür online gestalten",
+    "slide_1_headline": "Energieeffiziente Fenster\nfür jedes Objekt",
+    "slide_1_subline": "Vom Neubau bis zur Sanierung: hochwertige Fenster mit passender Verglasung und Rahmen für Wärme-, Schallschutz und Langlebigkeit—Lieferung und Montage durch TAT Bau.",
+    "slide_1_cta": "Zu den Fenstern",
+    "slide_2_headline": "Rollläden\nSichtschutz, Sicherheit & Dämmung",
+    "slide_2_subline": "Rollläden schaffen Sichtschutz, zusätzliche Dämmung und mehr Sicherheit. Wir beraten, nehmen auf und montieren fachgerecht.",
+    "slide_2_cta": "Zu den Rollläden",
+    "cta_whatsapp": "Beratung anfragen"
   },
   "trust_badges": {
     "local": "Lokales Unternehmen in Delmenhorst",

@@ -291,7 +291,7 @@ export function WhatsAppInquiryModal({
             </button>
             <button
               type="submit"
-              className="flex-1 inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold px-4 py-3 rounded-lg transition-colors"
+              className="flex-1 inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-4 py-3 rounded-lg transition-colors"
             >
               {t("submit")}
             </button>

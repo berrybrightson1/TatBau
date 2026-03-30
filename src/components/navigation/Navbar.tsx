@@ -9,7 +9,7 @@ import { LanguageToggle } from "./LanguageToggle";
 import { MobileMenu } from "./MobileMenu";
 import { CONFIGURATOR_URL, CONTACT } from "@/lib/constants";
 
-const LOGO_SRC = "/images/logo/300h/Asset-2-300x.webp";
+const LOGO_SRC = "/images/logo/300h/tatbau-main-logo.svg";
 
 export function Navbar() {
   const t = useTranslations("nav");
@@ -98,7 +98,7 @@ export function Navbar() {
             href={CONFIGURATOR_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white text-sm font-semibold px-4 py-2.5 rounded transition-colors duration-200 whitespace-nowrap"
+            className="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-background text-sm font-semibold px-4 py-2.5 rounded transition-colors duration-200 whitespace-nowrap"
           >
             {t("configurator")}
             <ArrowRight className="w-4 h-4" />

@@ -32,7 +32,7 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     icons: {
-      icon: "/images/logo/300h/Assetfav-icon@300x.webp",
+      icon: "/images/logo/300h/tatbau-favicon.svg",
     },
     alternates: {
       languages: {

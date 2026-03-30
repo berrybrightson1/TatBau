@@ -12,7 +12,7 @@ export default function NotFound() {
       <p className="text-muted text-center max-w-md">{t("description")}</p>
       <Link
         href="/"
-        className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 transition-colors duration-200 whitespace-nowrap"
+        className="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3 transition-colors duration-200 whitespace-nowrap"
       >
         {t("back")}
       </Link>

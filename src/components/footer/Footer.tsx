@@ -13,7 +13,7 @@ import {
 import { CONTACT, CONFIGURATOR_URL } from "@/lib/constants";
 import { LanguageToggle } from "@/components/navigation/LanguageToggle";
 
-const LOGO_SRC = "/images/logo/300h/Asset-2-300x.webp";
+const LOGO_SRC = "/images/logo/300h/tatbau-main-logo.svg";
 
 export function Footer() {
   const t = useTranslations("footer");

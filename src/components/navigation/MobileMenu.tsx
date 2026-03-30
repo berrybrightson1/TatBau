@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import { LanguageToggle } from "./LanguageToggle";
 import { CONFIGURATOR_URL } from "@/lib/constants";
 
-const LOGO_SRC = "/images/logo/300h/Asset-2-300x.webp";
+const LOGO_SRC = "/images/logo/300h/tatbau-main-logo.svg";
 
 interface MobileMenuProps {
   open: boolean;
@@ -59,7 +59,7 @@ export function MobileMenu({ open, onClose, navLinks }: MobileMenuProps) {
               href={CONFIGURATOR_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 transition-colors duration-200 whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3 transition-colors duration-200 whitespace-nowrap"
             >
               {t("configurator")}
               <ArrowRight className="w-4 h-4" />

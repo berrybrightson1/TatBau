@@ -61,7 +61,7 @@ export function ChatWidget() {
     <Popover.Root open={open} onOpenChange={setOpen}>
       <Popover.Trigger asChild>
         <button
-          className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-accent hover:bg-accent-hover text-white flex items-center justify-center shadow-lg shadow-accent/20 transition-colors duration-200 rounded-full"
+          className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-accent hover:bg-accent-hover text-background flex items-center justify-center shadow-lg shadow-accent/20 transition-colors duration-200 rounded-full"
           aria-label={t("title")}
         >
           {open ? (
@@ -145,7 +145,7 @@ export function ChatWidget() {
             />
             <button
               type="submit"
-              className="p-2.5 bg-accent hover:bg-accent-hover text-white transition-colors duration-200"
+              className="p-2.5 bg-accent hover:bg-accent-hover text-background transition-colors duration-200"
               aria-label="Send"
             >
               <Send className="w-4 h-4" />

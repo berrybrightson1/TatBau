@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "TAT Bau - Premium Entrance Doors | Delmenhorst",
-    "description": "TAT Bau specializes in high-quality entrance doors with modern design, security features and professional installation. Windows, roller shutters and sun protection. Design your door online."
+    "title": "TAT Bau - Premium Doors, Windows & Roller Shutters | Delmenhorst",
+    "description": "TAT Bau supplies and installs premium entrance doors, energy-efficient windows and roller shutters for homes and businesses in Delmenhorst and the region. Design your door online or request a consultation."
   },
   "nav": {
     "home": "Home",
@@ -28,10 +28,16 @@
     "close": "Close"
   },
   "hero": {
-    "headline": "Premium Entrance Doors\nDesigned for Your Home",
-    "subline": "TAT Bau specializes in high-quality entrance doors with modern design, advanced security features and professional installation. We also offer windows, roller shutters and sun protection systems for residential and commercial properties.",
-    "cta": "Design Your Door Online",
-    "cta_whatsapp": "Request Consultation."
+    "slide_0_headline": "Premium Entrance Doors\nDesigned for Your Home",
+    "slide_0_subline": "Design your aluminium entrance door online with our configurator—modern security, energy efficiency and professional installation from TAT Bau in Delmenhorst.",
+    "slide_0_cta": "Design Your Door Online",
+    "slide_1_headline": "Energy-Efficient Windows\nFor Every Property",
+    "slide_1_subline": "From new builds to renovations: high-quality windows with the right glazing and frames for thermal comfort, sound insulation and lasting performance—supplied and installed by TAT Bau.",
+    "slide_1_cta": "Explore Windows",
+    "slide_2_headline": "Roller Shutters\nPrivacy, Security & Insulation",
+    "slide_2_subline": "Roller shutters add privacy, extra insulation and security for your home or business. We advise on options, take measurements and install with care.",
+    "slide_2_cta": "Explore Roller Shutters",
+    "cta_whatsapp": "Request Consultation"
   },
   "trust_badges": {
     "local": "Local company in Delmenhorst",

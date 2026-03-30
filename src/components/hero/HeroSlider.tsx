@@ -6,19 +6,35 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ArrowRight, ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { CONFIGURATOR_URL, CONTACT } from "@/lib/constants";
 
 const SLIDES = [
-  { src: "/images/hero/slide-1.jpg", alt: "Modern entrance door" },
-  { src: "/images/hero/slide-2.jpg", alt: "Contemporary front door" },
-  { src: "/images/hero/slide-3.jpg", alt: "Elegant entrance design" },
+  {
+    src: "/images/hero/Door.jpeg",
+    alt: "Premium entrance door",
+    primary: { type: "external" as const, href: CONFIGURATOR_URL },
+  },
+  {
+    src: "/images/hero/windows.jpeg",
+    alt: "Energy-efficient windows",
+    primary: { type: "link" as const, href: "/produkte/windows" },
+  },
+  {
+    src: "/images/hero/roller-shutter.jpeg",
+    alt: "Roller shutters",
+    primary: { type: "link" as const, href: "/produkte/roller_shutters" },
+  },
 ];
+
+const ctaClass =
+  "inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold rounded-lg shadow-lg shadow-accent/20 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto whitespace-nowrap min-h-[48px] sm:min-h-[52px] text-sm sm:text-base py-3 px-6 sm:py-3.5 sm:px-8";
 
 export function HeroSlider() {
   const t = useTranslations("hero");
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 5000, stopOnInteraction: false }),
+    Autoplay({ delay: 6000, stopOnInteraction: false }),
   ]);
 
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -40,9 +56,14 @@ export function HeroSlider() {
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
+  const headline = t(`slide_${selectedIndex}_headline`);
+  const subline = t(`slide_${selectedIndex}_subline`);
+  const primaryCta = t(`slide_${selectedIndex}_cta`);
+
+  const primary = SLIDES[selectedIndex].primary;
+
   return (
     <section className="relative h-[70vh] min-h-[320px] max-h-[700px] w-full overflow-hidden">
-      {/* Carousel slides */}
       <div className="h-full" ref={emblaRef}>
         <div className="flex h-full">
           {SLIDES.map((slide, i) => (
@@ -60,33 +81,38 @@ export function HeroSlider() {
         </div>
       </div>
 
-      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
 
-      {/* Content overlay – far left, aligned with page content */}
       <div className="absolute inset-0 flex items-center pointer-events-none">
         <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 flex flex-col items-start text-left pointer-events-auto">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.15] mb-3 sm:mb-5 whitespace-pre-line text-left">
-            {t("headline")}
+            {headline}
           </h1>
           <p className="text-xs sm:text-sm md:text-base text-foreground/80 max-w-lg mb-5 sm:mb-8 text-left">
-            {t("subline")}
+            {subline}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-md">
-            <a
-              href={CONFIGURATOR_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg shadow-lg shadow-accent/20 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto whitespace-nowrap min-h-[48px] sm:min-h-[52px] text-sm sm:text-base py-3 px-6 sm:py-3.5 sm:px-8"
-            >
-              {t("cta")}
-              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-            </a>
+            {primary.type === "external" ? (
+              <a
+                href={primary.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={ctaClass}
+              >
+                {primaryCta}
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+              </a>
+            ) : (
+              <Link href={primary.href} className={ctaClass}>
+                {primaryCta}
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+              </Link>
+            )}
             <a
               href={CONTACT.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold rounded-lg border-2 border-white/20 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto whitespace-nowrap min-h-[48px] sm:min-h-[52px] text-sm sm:text-base py-3 px-6 sm:py-3.5 sm:px-8"
+              className={ctaClass}
             >
               <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
               {t("cta_whatsapp")}
@@ -95,7 +121,6 @@ export function HeroSlider() {
         </div>
       </div>
 
-      {/* Prev / Next arrows */}
       <button
         onClick={scrollPrev}
         className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 p-2 sm:p-3 text-white/70 hover:text-white transition-colors touch-manipulation"
@@ -111,7 +136,6 @@ export function HeroSlider() {
         <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
       </button>
 
-      {/* Dot indicators */}
       <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
         {SLIDES.map((_, i) => (
           <button
