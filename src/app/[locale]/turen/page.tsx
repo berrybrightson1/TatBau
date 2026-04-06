@@ -39,7 +39,7 @@ export default async function TurenPage({
   return (
     <main className="min-h-[60vh] pt-28 sm:pt-32 pb-16 sm:pb-24">
       {/* Hero block – Modern Entrance Doors + Design Your Door Online (fused) + door image faded from left */}
-      <section className="bg-background border-b border-white/5 px-4 sm:px-6 py-12 sm:py-16 relative overflow-hidden">
+      <section className="bg-background border-b border-divider px-4 sm:px-6 py-12 sm:py-16 relative overflow-hidden">
         <div className="max-w-6xl mx-auto relative flex flex-col lg:flex-row lg:items-stretch lg:gap-12 xl:gap-16">
           <div className="flex-1 min-w-0 flex flex-col">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5 sm:mb-6">
@@ -52,14 +52,14 @@ export default async function TurenPage({
               href={CONFIGURATOR_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3.5 sm:px-8 sm:py-4 text-sm sm:text-base transition-colors duration-200 w-full sm:w-auto whitespace-nowrap mt-auto"
+              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3.5 sm:px-8 sm:py-4 rounded-lg text-sm sm:text-base transition-colors duration-200 w-full sm:w-auto whitespace-nowrap mt-auto"
             >
               {t("configurator_section.cta")}
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>
           <div className="hidden lg:flex flex-shrink-0 lg:w-[44%] xl:w-[48%] relative mt-8 lg:mt-0 min-h-[320px]">
-            <div className="relative w-full h-full min-h-[320px] rounded-lg overflow-hidden bg-background/50">
+            <div className="relative w-full h-full min-h-[320px] rounded-2xl overflow-hidden bg-background/50">
               <Image
                 src={HERO_DOOR_IMAGE}
                 alt="Modern entrance door"
@@ -81,7 +81,7 @@ export default async function TurenPage({
       </section>
 
       {/* Two columns: titles in row 1, content in row 2 so right card height = left grid height */}
-      <section className="bg-surface border-b border-white/5 px-4 sm:px-6 py-12 sm:py-16">
+      <section className="bg-surface border-b border-divider px-4 sm:px-6 py-12 sm:py-16">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-10 sm:gap-x-12 lg:gap-x-16 gap-y-8 items-stretch">
           {/* Row 1: titles */}
           <h2 className="text-2xl sm:text-3xl font-bold">
@@ -97,7 +97,7 @@ export default async function TurenPage({
               return (
                 <div
                   key={key}
-                  className="flex flex-col gap-3 rounded-xl border border-white/10 bg-background/40 p-5 sm:p-6"
+                  className="interactive-card flex flex-col gap-3 rounded-2xl border border-border bg-background/40 p-5 sm:p-6"
                 >
                   <div className="w-12 h-12 rounded-lg bg-accent/15 flex items-center justify-center">
                     <Icon className="w-6 h-6 text-accent" />
@@ -110,7 +110,7 @@ export default async function TurenPage({
             })}
           </div>
           <div className="flex flex-col min-h-0">
-            <div className="rounded-xl border border-white/10 bg-background/40 p-6 sm:p-8 flex flex-col h-full min-h-0">
+            <div className="interactive-card rounded-2xl border border-border bg-background/40 p-6 sm:p-8 flex flex-col h-full min-h-0">
               <p className="text-muted text-sm sm:text-base mb-6 flex-1 min-h-0">
                 {t("contact_strip.text")}
               </p>
@@ -119,7 +119,7 @@ export default async function TurenPage({
                   href={CONFIGURATOR_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3.5 sm:px-8 sm:py-4 text-sm sm:text-base transition-colors duration-200 w-full sm:flex-1 sm:min-w-0 whitespace-nowrap"
+                  className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3.5 sm:px-8 sm:py-4 rounded-lg text-sm sm:text-base transition-colors duration-200 w-full sm:flex-1 sm:min-w-0 whitespace-nowrap"
                 >
                   {t("contact_strip.cta_design")}
                   <ArrowRight className="w-5 h-5" />
@@ -128,7 +128,7 @@ export default async function TurenPage({
                   href={CONTACT.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3.5 sm:px-8 sm:py-4 text-sm sm:text-base transition-colors duration-200 w-full sm:flex-1 sm:min-w-0 whitespace-nowrap"
+                  className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3.5 sm:px-8 sm:py-4 rounded-lg text-sm sm:text-base transition-colors duration-200 w-full sm:flex-1 sm:min-w-0 whitespace-nowrap"
                 >
                   <MessageCircle className="w-5 h-5" />
                   {t("contact_strip.cta_whatsapp")}

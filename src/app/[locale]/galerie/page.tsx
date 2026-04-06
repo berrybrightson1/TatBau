@@ -21,6 +21,9 @@ const GALLERY_IMAGES: Array<{ src: string; altKey?: string }> = [
   { src: "/images/gallery/new-galleryimages (6).png" },
   { src: "/images/gallery/new-galleryimages (7).png" },
   { src: "/images/gallery/new-galleryimages (8).png" },
+  { src: "/images/gallery/gallery-11.png" },
+  { src: "/images/gallery/gallery-12.png" },
+  { src: "/images/gallery/gallery-13.png" },
 ];
 
 export default async function GaleriePage({

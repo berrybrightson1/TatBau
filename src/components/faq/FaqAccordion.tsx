@@ -22,12 +22,12 @@ export function FaqAccordion() {
             return (
               <li
                 key={id}
-                className="rounded-xl border border-white/10 bg-surface/50 overflow-hidden"
+                className="rounded-2xl border border-border bg-surface/50 overflow-hidden"
               >
                 <button
                   type="button"
                   onClick={() => setOpenId(isOpen ? null : id)}
-                  className="w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-semibold text-foreground hover:bg-white/5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-xl"
+                  className="w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-semibold text-foreground hover:bg-subtle transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-2xl"
                   aria-expanded={isOpen}
                   aria-controls={`faq-answer-${id}`}
                   id={`faq-question-${id}`}
@@ -48,7 +48,7 @@ export function FaqAccordion() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 text-muted text-sm sm:text-base leading-relaxed border-t border-white/5">
+                    <p className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 text-muted text-sm sm:text-base leading-relaxed border-t border-divider">
                       {t(`items.${id}.a`)}
                     </p>
                   </div>

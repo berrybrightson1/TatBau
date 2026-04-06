@@ -54,7 +54,7 @@ export function ContactForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-          className="w-full bg-white/5 border border-white/10 px-4 py-3 text-foreground placeholder:text-muted focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
+          className="w-full bg-subtle border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
           placeholder={t("form_name")}
         />
       </div>
@@ -68,7 +68,7 @@ export function ContactForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full bg-white/5 border border-white/10 px-4 py-3 text-foreground placeholder:text-muted focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
+          className="w-full bg-subtle border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
           placeholder={t("form_email")}
         />
       </div>
@@ -82,7 +82,7 @@ export function ContactForm() {
           onChange={(e) => setMessage(e.target.value)}
           required
           rows={4}
-          className="w-full bg-white/5 border border-white/10 px-4 py-3 text-foreground placeholder:text-muted focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all resize-y min-h-[100px]"
+          className="w-full bg-subtle border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all resize-y min-h-[100px]"
           placeholder={t("form_message")}
         />
       </div>
@@ -97,7 +97,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:opacity-60 text-background font-semibold px-6 py-3 min-h-[48px] transition-colors duration-200 w-full sm:w-auto"
+        className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:opacity-60 text-background font-semibold px-6 py-3 rounded-lg min-h-[48px] transition-colors duration-200 w-full sm:w-auto"
       >
         {status === "sending" ? (
           <>

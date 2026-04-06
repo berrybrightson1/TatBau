@@ -28,7 +28,7 @@ export function SearchCategorySelect() {
               asChild
               align="center" 
               sideOffset={4}
-              className="z-50 w-[var(--radix-popover-trigger-width)] rounded-[2px] border border-surface bg-[#0a0a0a] shadow-2xl outline-none overflow-hidden"
+              className="z-50 w-[var(--radix-popover-trigger-width)] rounded-[2px] border border-border bg-background shadow-2xl outline-none overflow-hidden"
             >
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
@@ -44,7 +44,7 @@ export function SearchCategorySelect() {
                         setSelected(category);
                         setOpen(false);
                       }}
-                      className="flex items-center justify-between px-4 py-3 text-[11px] font-bold tracking-wider uppercase cursor-pointer transition-colors outline-none !shadow-none text-foreground hover:bg-[#1a1a1a] hover:text-accent group"
+                      className="flex items-center justify-between px-4 py-3 text-[11px] font-bold tracking-wider uppercase cursor-pointer transition-colors outline-none !shadow-none text-foreground hover:bg-subtle-hover hover:text-accent group"
                     >
                       <span className={selected === category ? "text-accent" : ""}>{category}</span>
                       {selected === category && <Check className="w-4 h-4 text-accent" />}

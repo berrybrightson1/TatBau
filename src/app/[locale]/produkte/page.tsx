@@ -71,7 +71,7 @@ export default async function ProduktePage({
               <Link
                 key={key}
                 href={href}
-                className="group block rounded-2xl border border-white/10 bg-surface/50 overflow-hidden hover:border-white/15 hover:bg-surface/70 transition-all duration-300"
+                className="group block interactive-card rounded-2xl border border-border bg-surface/50 overflow-hidden hover:border-border-strong hover:bg-surface/70"
               >
                 <article className="h-full flex flex-col">
                   <div className="relative aspect-[4/3] bg-surface">
@@ -107,7 +107,7 @@ export default async function ProduktePage({
           })}
         </div>
 
-        <div className="mt-14 sm:mt-20 pt-12 border-t border-white/10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+        <div className="mt-14 sm:mt-20 pt-12 border-t border-border flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
           <a
             href={CONTACT.whatsapp}
             target="_blank"
@@ -121,7 +121,7 @@ export default async function ProduktePage({
             href={CONFIGURATOR_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 border border-white/20 hover:bg-white/5 font-semibold px-8 py-4 rounded-lg transition-colors duration-200 w-full sm:w-auto min-h-[52px]"
+            className="inline-flex items-center justify-center gap-2 border border-border-strong hover:bg-subtle font-semibold px-8 py-4 rounded-lg transition-colors duration-200 w-full sm:w-auto min-h-[52px]"
           >
             {t("configurator_cta")}
             <ArrowRight className="w-5 h-5" />

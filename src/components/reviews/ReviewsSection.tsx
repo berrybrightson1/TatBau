@@ -45,6 +45,8 @@ export function ReviewsSection() {
               <button
                 key={id}
                 onClick={() => setActive(i)}
+                onMouseEnter={() => setActive(i)}
+                onFocus={() => setActive(i)}
                 className={`relative rounded-full transition-all duration-300 ease-out ${
                   isActive
                     ? "w-[72px] h-[72px] sm:w-[90px] sm:h-[90px] z-10"
@@ -54,7 +56,7 @@ export function ReviewsSection() {
               >
                 {/* Avatar – flat vector or Lucide fallback */}
                 <div
-                  className={`w-full h-full rounded-full overflow-hidden bg-surface border-2 border-white/10 flex items-center justify-center transition-all duration-300 ${
+                  className={`w-full h-full rounded-full overflow-hidden bg-surface border-2 border-border flex items-center justify-center transition-all duration-300 ${
                     isActive
                       ? "ring-2 ring-accent ring-offset-2 ring-offset-background border-accent/50"
                       : "grayscale-[30%] opacity-70 hover:opacity-95"
@@ -84,11 +86,11 @@ export function ReviewsSection() {
         <div className="relative max-w-2xl mx-auto mt-0">
           {/* Triangle pointer */}
           <div className="flex justify-center">
-            <div className="w-5 h-5 bg-surface rotate-45 translate-y-2.5 border-t border-l border-white/10" />
+            <div className="w-5 h-5 bg-surface rotate-45 translate-y-2.5 border-t border-l border-border" />
           </div>
 
           {/* Card */}
-          <div className="bg-surface border border-white/10 px-8 py-10 sm:px-12 sm:py-12 relative">
+          <div className="bg-surface border border-border px-8 py-10 sm:px-12 sm:py-12 relative">
             <h3 className="text-accent font-bold uppercase tracking-[0.15em] text-sm mb-1">
               {t(`items.${REVIEW_IDS[active]}.name`)}
             </h3>

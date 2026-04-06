@@ -26,7 +26,7 @@ export function MobileMenu({ open, onClose, navLinks }: MobileMenuProps) {
         <Dialog.Content className="fixed top-0 right-0 h-full w-[300px] max-w-[85vw] bg-surface z-50 shadow-2xl flex flex-col">
           <Dialog.Title className="sr-only">{t("menu")}</Dialog.Title>
 
-          <div className="flex items-center justify-between px-6 h-16 border-b border-white/5">
+          <div className="flex items-center justify-between px-6 h-16 border-b border-divider">
             <Link href="/" onClick={onClose} className="flex items-center select-none" aria-label="TAT Bau Home">
               <Image src={LOGO_SRC} alt="TAT Bau" width={100} height={33} className="h-8 w-auto" />
             </Link>
@@ -46,7 +46,7 @@ export function MobileMenu({ open, onClose, navLinks }: MobileMenuProps) {
                 key={link.href}
                 href={link.href}
                 onClick={onClose}
-                className="text-foreground/80 hover:text-accent font-medium py-3 border-b border-white/5 transition-colors duration-200"
+                className="text-foreground/80 hover:text-accent font-medium py-3 border-b border-divider transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -59,7 +59,7 @@ export function MobileMenu({ open, onClose, navLinks }: MobileMenuProps) {
               href={CONFIGURATOR_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3 transition-colors duration-200 whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3 rounded-lg transition-colors duration-200 whitespace-nowrap"
             >
               {t("configurator")}
               <ArrowRight className="w-4 h-4" />

@@ -9,6 +9,7 @@ import { ChatWidget } from "@/components/chat/ChatWidget";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { WhatsAppModalProvider } from "@/components/whatsapp/WhatsAppModalProvider";
 
+
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],

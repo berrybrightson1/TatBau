@@ -10,8 +10,9 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-import { CONTACT, CONFIGURATOR_URL } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
 import { LanguageToggle } from "@/components/navigation/LanguageToggle";
+
 
 const LOGO_SRC = "/images/logo/300h/tatbau-main-logo.svg";
 
@@ -22,7 +23,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black border-t border-white/5">
+    <footer className="bg-surface border-t border-divider">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand column */}
@@ -152,7 +153,7 @@ export function Footer() {
             </div>
 
             {/* Small OSM embed */}
-            <div className="relative overflow-hidden rounded-lg border border-white/10 aspect-video min-h-[140px] w-full">
+            <div className="relative overflow-hidden rounded-2xl border border-border aspect-video min-h-[140px] w-full">
               <iframe
                 title="OpenStreetMap – TAT Bau location"
                 src={CONTACT.mapUrl}
@@ -168,7 +169,7 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/5">
+      <div className="border-t border-divider">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p className="text-xs text-muted">
             &copy; {currentYear} TAT Bau. {t("rights")}

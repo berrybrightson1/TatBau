@@ -75,7 +75,7 @@ export function Navbar() {
           })}
         </nav>
 
-        {/* Right: Contact + CTA + Language + Mobile menu */}
+        {/* Right: Contact + CTA + Appearance + Language + Mobile menu */}
         <div className="flex items-center gap-3 sm:gap-4 shrink-0">
           <div className="hidden md:flex items-center gap-4 text-sm">
             <a
@@ -98,19 +98,19 @@ export function Navbar() {
             href={CONFIGURATOR_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-background text-sm font-semibold px-4 py-2.5 rounded transition-colors duration-200 whitespace-nowrap"
+            className="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-background text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors duration-200 whitespace-nowrap"
           >
             {t("configurator")}
             <ArrowRight className="w-4 h-4" />
           </a>
 
-          <div className="hidden sm:block border-l border-surface pl-3">
+          <div className="hidden sm:flex items-center gap-2 border-l border-surface pl-3">
             <LanguageToggle />
           </div>
 
           <button
             aria-label={t("menu")}
-            className="lg:hidden p-2 text-foreground hover:bg-white/5 rounded"
+            className="lg:hidden p-2 text-foreground hover:bg-subtle-hover rounded"
             onClick={() => setMobileOpen(true)}
           >
             <Menu className="w-6 h-6" />

@@ -46,7 +46,7 @@ export default async function ProduktDetailPage({
   return (
     <main className="min-h-[60vh] pt-28 sm:pt-32 pb-16 sm:pb-24">
       {/* Hero: title, intro, image */}
-      <section className="bg-background border-b border-white/5 px-4 sm:px-6 py-12 sm:py-16 relative overflow-hidden">
+      <section className="bg-background border-b border-divider px-4 sm:px-6 py-12 sm:py-16 relative overflow-hidden">
         <div className="max-w-6xl mx-auto relative flex flex-col lg:flex-row lg:items-stretch lg:gap-12 xl:gap-16">
           <div className="flex-1 min-w-0 flex flex-col">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5 sm:mb-6">
@@ -57,7 +57,7 @@ export default async function ProduktDetailPage({
             </p>
           </div>
           <div className="hidden lg:flex flex-shrink-0 lg:w-[44%] xl:w-[48%] relative mt-8 lg:mt-0 min-h-[280px]">
-            <div className="relative w-full h-full min-h-[280px] rounded-lg overflow-hidden bg-background/50">
+            <div className="relative w-full h-full min-h-[280px] rounded-2xl overflow-hidden bg-background/50">
               <Image
                 src={imageSrc}
                 alt={title}
@@ -80,7 +80,7 @@ export default async function ProduktDetailPage({
       </section>
 
       {/* Detail writeup */}
-      <section className="bg-surface border-b border-white/5 px-4 sm:px-6 py-12 sm:py-16">
+      <section className="bg-surface border-b border-divider px-4 sm:px-6 py-12 sm:py-16">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl">
             <p className="text-muted text-lg leading-relaxed whitespace-pre-line">
@@ -97,14 +97,14 @@ export default async function ProduktDetailPage({
             href={CONTACT.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3.5 sm:px-8 sm:py-4 text-sm sm:text-base transition-colors duration-200 w-full sm:w-auto"
+            className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-background font-semibold px-6 py-3.5 sm:px-8 sm:py-4 rounded-lg text-sm sm:text-base transition-colors duration-200 w-full sm:w-auto"
           >
             <MessageCircle className="w-5 h-5" />
             {t("cta")}
           </a>
           <Link
             href="/produkte"
-            className="inline-flex items-center justify-center gap-2 text-muted hover:text-foreground font-semibold text-sm sm:text-base transition-colors w-full sm:w-auto border border-white/20 hover:bg-white/5 px-6 py-3.5 sm:px-8 sm:py-4 rounded-lg"
+            className="inline-flex items-center justify-center gap-2 text-muted hover:text-foreground font-semibold text-sm sm:text-base transition-colors w-full sm:w-auto border border-border-strong hover:bg-subtle px-6 py-3.5 sm:px-8 sm:py-4 rounded-lg"
           >
             ← {t("back_to_products")}
           </Link>

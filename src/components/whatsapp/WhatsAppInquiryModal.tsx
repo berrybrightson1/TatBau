@@ -127,17 +127,17 @@ export function WhatsAppInquiryModal({
       onClick={handleOverlayClick}
     >
       <div
-        className="relative w-full max-w-lg sm:max-w-xl md:max-w-2xl max-h-[90vh] overflow-y-auto rounded-xl border border-white/10 bg-surface shadow-xl"
+        className="relative w-full max-w-lg sm:max-w-xl md:max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl border border-border bg-surface shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-white/10 bg-surface px-4 py-3 sm:px-6 sm:py-4">
+        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-surface px-4 py-3 sm:px-6 sm:py-4">
           <h2 id="whatsapp-modal-title" className="text-lg font-semibold text-foreground">
             {t("title")}
           </h2>
           <button
             type="button"
             onClick={onClose}
-            className="p-2 rounded-lg text-muted hover:text-foreground hover:bg-white/10 transition-colors"
+            className="p-2 rounded-lg text-muted hover:text-foreground hover:bg-subtle-hover transition-colors"
             aria-label={t("close")}
           >
             <X className="w-5 h-5" />
@@ -158,7 +158,7 @@ export function WhatsAppInquiryModal({
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder={t("name_placeholder")}
-                className="w-full px-3 py-2.5 rounded-lg border border-white/10 bg-background text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent"
+                className="w-full px-3 py-2.5 rounded-lg border border-border bg-background text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent"
                 autoComplete="name"
               />
               {errors.name && (
@@ -176,7 +176,7 @@ export function WhatsAppInquiryModal({
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder={t("phone_placeholder")}
-                className="w-full px-3 py-2.5 rounded-lg border border-white/10 bg-background text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent"
+                className="w-full px-3 py-2.5 rounded-lg border border-border bg-background text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent"
                 autoComplete="tel"
               />
               {errors.phone && (
@@ -194,7 +194,7 @@ export function WhatsAppInquiryModal({
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t("email_placeholder")}
-                className="w-full px-3 py-2.5 rounded-lg border border-white/10 bg-background text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent"
+                className="w-full px-3 py-2.5 rounded-lg border border-border bg-background text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent"
                 autoComplete="email"
               />
             </div>
@@ -213,7 +213,7 @@ export function WhatsAppInquiryModal({
                 aria-expanded={productOpen}
                 aria-labelledby="wa-product-label"
                 onClick={() => setProductOpen((prev) => !prev)}
-                className="w-full flex items-center justify-between gap-2 px-3 py-2.5 rounded-lg border border-white/10 bg-background text-left text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent focus:outline-none"
+                className="w-full flex items-center justify-between gap-2 px-3 py-2.5 rounded-lg border border-border bg-background text-left text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent focus:outline-none"
               >
                 <span className={product ? "" : "text-muted"}>
                   {product || t("product_placeholder")}
@@ -227,7 +227,7 @@ export function WhatsAppInquiryModal({
                   role="listbox"
                   aria-labelledby="wa-product-label"
                   onWheel={(e) => e.stopPropagation()}
-                  className="absolute z-20 left-0 right-0 mt-1 py-1 rounded-lg border border-white/10 bg-surface shadow-xl max-h-48 overflow-y-auto overflow-x-hidden overscroll-contain touch-pan-y"
+                  className="absolute z-20 left-0 right-0 mt-1 py-1 rounded-lg border border-border bg-surface shadow-xl max-h-48 overflow-y-auto overflow-x-hidden overscroll-contain touch-pan-y"
                 >
                   <li role="option">
                     <button
@@ -236,7 +236,7 @@ export function WhatsAppInquiryModal({
                         setProduct("");
                         setProductOpen(false);
                       }}
-                      className="w-full text-left px-3 py-2.5 text-sm text-muted hover:bg-white/5 hover:text-foreground transition-colors"
+                      className="w-full text-left px-3 py-2.5 text-sm text-muted hover:bg-subtle hover:text-foreground transition-colors"
                     >
                       {t("product_placeholder")}
                     </button>
@@ -273,7 +273,7 @@ export function WhatsAppInquiryModal({
               onChange={(e) => setMessage(e.target.value)}
               placeholder={t("message_placeholder")}
               rows={3}
-              className="w-full px-3 py-2.5 rounded-lg border border-white/10 bg-background text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent resize-y min-h-[80px] max-h-[140px]"
+              className="w-full px-3 py-2.5 rounded-lg border border-border bg-background text-foreground placeholder:text-muted focus:border-accent focus:ring-1 focus:ring-accent resize-y min-h-[80px] max-h-[140px]"
               autoComplete="off"
             />
             {errors.message && (
@@ -285,7 +285,7 @@ export function WhatsAppInquiryModal({
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-3 rounded-lg border border-white/20 text-foreground hover:bg-white/5 transition-colors"
+              className="px-4 py-3 rounded-lg border border-border-strong text-foreground hover:bg-subtle transition-colors"
             >
               {t("close")}
             </button>

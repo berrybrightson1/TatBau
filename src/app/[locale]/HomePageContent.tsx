@@ -34,7 +34,7 @@ export function HomePageContent() {
       <HeroSlider />
 
       {/* Products at a glance – directly under hero */}
-      <section className="bg-surface border-y border-white/5 px-4 py-12 sm:px-6 sm:py-16">
+      <section className="bg-surface border-y border-divider px-4 py-12 sm:px-6 sm:py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
             {t("products_section.title")}
@@ -47,7 +47,7 @@ export function HomePageContent() {
                 <Link
                   key={key}
                   href={href}
-                  className="group block rounded-xl border border-white/10 bg-background/60 overflow-hidden hover:border-white/15 transition-all duration-300"
+                  className="group block interactive-card rounded-2xl border border-border bg-background/60 overflow-hidden hover:border-border-strong"
                 >
                   <article className="h-full flex flex-col">
                     <div className="relative aspect-[16/10] bg-surface">

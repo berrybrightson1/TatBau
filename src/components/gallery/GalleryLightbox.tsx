@@ -89,7 +89,7 @@ export function GalleryLightbox({ images }: { images: GalleryImage[] }) {
               setZoom(1);
               setPosition({ x: 0, y: 0 });
             }}
-            className="group relative aspect-[4/3] rounded-lg overflow-hidden bg-surface border border-white/5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="group interactive-card relative aspect-[4/3] rounded-2xl overflow-hidden bg-surface border border-divider text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <Image
               src={item.src}
