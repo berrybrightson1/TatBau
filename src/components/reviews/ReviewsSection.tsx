@@ -8,12 +8,12 @@ import Image from "next/image";
 const REVIEW_IDS = ["1", "2", "3", "4", "5", "6"] as const;
 
 const AVATARS = [
-  "/images/avatars/avatar-1.svg",
-  "/images/avatars/avatar-2.svg",
-  "/images/avatars/avatar-3.svg",
-  "/images/avatars/avatar-4.svg",
-  "/images/avatars/avatar-5.svg",
-  "/images/avatars/avatar-6.svg",
+  "/images/reviews/image-1 (1).jpeg",
+  "/images/reviews/image-1 (2).jpeg",
+  "/images/reviews/image-1 (3).jpeg",
+  "/images/reviews/image-1 (4).jpeg",
+  "/images/reviews/image-1 (5).jpeg",
+  "/images/reviews/image-1 (1).png",
 ];
 
 export function ReviewsSection() {
