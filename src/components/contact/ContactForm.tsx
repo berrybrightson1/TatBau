@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Send, Loader2 } from "lucide-react";
+import { Send } from "lucide-react";
 
-type Status = "idle" | "sending" | "success" | "error";
+type Status = "idle" | "success" | "error";
 
 export function ContactForm() {
   const t = useTranslations("pages.kontakt");
@@ -14,30 +14,24 @@ export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setStatus("sending");
+    setStatus("idle");
     setErrorMessage("");
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
-      });
-      const data = await res.json().catch(() => ({}));
+      const subject = encodeURIComponent(`[TAT Bau Contact] from ${name.trim()}`);
+      const body = encodeURIComponent(
+        `Name: ${name.trim()}\nEmail: ${email.trim()}\n\n${message.trim()}`
+      );
+      window.location.href = `mailto:info@tatbau.de?subject=${subject}&body=${body}`;
 
-      if (!res.ok) {
-        setErrorMessage(data.error ?? "Something went wrong.");
-        setStatus("error");
-        return;
-      }
       setStatus("success");
       setName("");
       setEmail("");
       setMessage("");
     } catch {
-      setErrorMessage("Network error. Please try again.");
+      setErrorMessage(t("form_error"));
       setStatus("error");
     }
   }
@@ -88,7 +82,7 @@ export function ContactForm() {
       </div>
 
       {status === "success" && (
-        <p className="text-sm text-green-500">Message sent. We&apos;ll get back to you soon.</p>
+        <p className="text-sm text-green-500">{t("form_success_mailto")}</p>
       )}
       {status === "error" && errorMessage && (
         <p className="text-sm text-red-400">{errorMessage}</p>
@@ -96,20 +90,12 @@ export function ContactForm() {
 
       <button
         type="submit"
-        disabled={status === "sending"}
         className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover disabled:opacity-60 text-background font-semibold px-6 py-3 rounded-lg min-h-[48px] transition-colors duration-200 w-full sm:w-auto"
       >
-        {status === "sending" ? (
-          <>
-            <Loader2 className="w-4 h-4 animate-spin" />
-            Sending…
-          </>
-        ) : (
-          <>
-            <Send className="w-4 h-4" />
-            {t("form_send")}
-          </>
-        )}
+        <>
+          <Send className="w-4 h-4" />
+          {t("form_send")}
+        </>
       </button>
     </form>
   );

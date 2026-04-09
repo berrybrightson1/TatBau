@@ -238,6 +238,8 @@
       "form_email": "Email",
       "form_message": "Message",
       "form_send": "Send",
+      "form_success_mailto": "Your email app has been opened with your message.",
+      "form_error": "Could not open your email app. Please email us at info@tatbau.de.",
       "form_heading": "Contact form",
       "location_heading": "Location",
       "open_in_maps": "Open in Google Maps",

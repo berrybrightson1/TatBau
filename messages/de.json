@@ -238,6 +238,8 @@
       "form_email": "E-Mail",
       "form_message": "Nachricht",
       "form_send": "Senden",
+      "form_success_mailto": "Ihre E-Mail-App wurde mit Ihrer Nachricht geöffnet.",
+      "form_error": "Ihre E-Mail-App konnte nicht geöffnet werden. Schreiben Sie uns an info@tatbau.de.",
       "form_heading": "Kontaktformular",
       "location_heading": "Standort",
       "open_in_maps": "In Google Maps öffnen",
