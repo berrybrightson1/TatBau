@@ -34,3 +34,7 @@ jobs:
           branch: hostinger-static
           folder: out
           clean: true
+
+      - name: Trigger Hostinger deploy webhook
+        if: ${{ secrets.HOSTINGER_DEPLOY_WEBHOOK != '' }}
+        run: curl -fsS -X POST "${{ secrets.HOSTINGER_DEPLOY_WEBHOOK }}"
