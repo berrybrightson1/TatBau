@@ -62,6 +62,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={dmSans.variable}>
+      <head>
+        <link rel="stylesheet" href="/static-hero-mobile.css" />
+      </head>
       <body className="bg-background text-foreground antialiased font-sans">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SmoothScrollProvider>

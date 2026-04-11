@@ -2,9 +2,12 @@ name: Hostinger Static Deploy Branch
 
 on:
   push:
-    branches:
-      - main
+    branches: [main, master]
   workflow_dispatch:
+
+concurrency:
+  group: hostinger-static-deploy
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -35,6 +38,3 @@ jobs:
           folder: out
           clean: true
 
-      - name: Trigger Hostinger deploy webhook
-        if: ${{ secrets.HOSTINGER_DEPLOY_WEBHOOK != '' }}
-        run: curl -fsS -X POST "${{ secrets.HOSTINGER_DEPLOY_WEBHOOK }}"
