@@ -1,0 +1,81 @@
+/**
+ * Extra layout overrides for static export / mobile (loaded from layout).
+ * Lives in public/ so `next build` copies it to out/ automatically.
+ */
+
+/* Hero carousel: hide prev/next if present (legacy HTML); dots + swipe still work */
+button[aria-label="Previous slide"],
+button[aria-label="Next slide"] {
+  display: none !important;
+}
+
+@media (max-width: 639px) {
+  main > section:first-of-type {
+    min-height: 360px !important;
+    height: 72vh !important;
+    max-height: 700px !important;
+  }
+
+  /* Content overlay: matches HeroSlider (flex, no items-center on wrapper) */
+  main > section:first-of-type > div.absolute.inset-0.flex.pointer-events-none {
+    align-items: stretch !important;
+  }
+
+  main > section:first-of-type > div.absolute.inset-0.flex.pointer-events-none > div.max-w-7xl {
+    flex: 1 1 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    padding-left: max(2.75rem, env(safe-area-inset-left, 0px)) !important;
+    padding-right: max(2.75rem, env(safe-area-inset-right, 0px)) !important;
+    /* Clear fixed navbar + notch */
+    padding-top: calc(env(safe-area-inset-top, 0px) + 6rem) !important;
+    padding-bottom: max(4.75rem, env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  main > section:first-of-type .max-w-7xl .max-w-lg > h1 {
+    margin-bottom: 1rem !important;
+    line-height: 1.25 !important;
+  }
+
+  main > section:first-of-type .max-w-7xl .max-w-lg > p {
+    margin-bottom: 0 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.65 !important;
+  }
+
+  main > section:first-of-type .max-w-7xl > div.max-w-md {
+    margin-top: 0 !important;
+    gap: 1rem !important;
+  }
+
+  main > section:first-of-type .max-w-7xl > div.max-w-md > a {
+    border-radius: 0.75rem !important;
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important;
+  }
+
+  main > section:first-of-type > div.absolute.flex.gap-2.z-10 {
+    bottom: max(1rem, env(safe-area-inset-bottom, 0px)) !important;
+    z-index: 10 !important;
+  }
+
+  /* Footer: 2-column grid on mobile */
+  footer .max-w-7xl > div.grid[class*="grid-cols-1"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 1.25rem !important;
+    row-gap: 2rem !important;
+  }
+
+  footer .max-w-7xl > div.grid > div:first-child {
+    grid-column: 1 / -1 !important;
+  }
+
+  footer .max-w-7xl > div.grid > div:nth-child(4) {
+    grid-column: 1 / -1 !important;
+  }
+
+  footer .max-w-7xl > div.grid h3.font-semibold {
+    margin-bottom: 1rem !important;
+  }
+}
