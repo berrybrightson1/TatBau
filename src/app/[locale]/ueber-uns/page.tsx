@@ -9,10 +9,17 @@ import {
   MapPin,
 } from "lucide-react";
 
-const TEAM_IMAGES = [
-  "/images/team/Project Consultation.png",
-  "/images/team/Technical Measurement.png",
-  "/images/team/Installation Team.png",
+const TEAM_CARDS = [
+  {
+    image: "/images/team/Project Consultation.png",
+    nameKey: "team_member_1_name",
+    roleKey: "team_member_1_role",
+  },
+  {
+    image: "/images/team/Installation Team.png",
+    nameKey: "team_member_3_name",
+    roleKey: "team_member_3_role",
+  },
 ] as const;
 
 export default async function UeberUnsPage({
@@ -75,27 +82,27 @@ export default async function UeberUnsPage({
         <p className="text-muted leading-relaxed mb-8 sm:mb-10 max-w-3xl">
           {t("team_intro")}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-          {TEAM_IMAGES.map((src, idx) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          {TEAM_CARDS.map((card) => (
             <article
-              key={src}
+              key={card.image}
               className="interactive-card rounded-2xl border border-border bg-surface/60 overflow-hidden"
             >
               <div className="relative aspect-[4/3] bg-background/40">
                 <Image
-                  src={src}
-                  alt={t(`team_member_${idx + 1}_name`)}
+                  src={card.image}
+                  alt={t(card.nameKey)}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="p-5 sm:p-6">
                 <h3 className="text-lg font-semibold mb-2">
-                  {t(`team_member_${idx + 1}_name`)}
+                  {t(card.nameKey)}
                 </h3>
                 <p className="text-muted text-sm leading-relaxed">
-                  {t(`team_member_${idx + 1}_role`)}
+                  {t(card.roleKey)}
                 </p>
               </div>
             </article>
