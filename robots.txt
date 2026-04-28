@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tat-bau.de/sitemap.xml
