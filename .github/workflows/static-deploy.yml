@@ -1,0 +1,24 @@
+name: Static Deploy Validation
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate-static:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Run static site validation
+        run: node scripts/validate_static_build.js
+      - name: Upload sitemap.xml (optional)
+        if: exists('sitemap.xml')
+        uses: actions/upload-artifact@v3
+        with:
+          name: sitemap-xml
+          path: sitemap.xml
