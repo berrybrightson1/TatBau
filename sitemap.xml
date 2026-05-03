@@ -1,70 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
-    <loc>https://tat-bau.de/de/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tat-bau.de/de/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tat-bau.de/en/index.html" />
-    <lastmod>2026-04-28</lastmod>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://tat-bau.de/en/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tat-bau.de/de/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tat-bau.de/en/index.html" />
-    <lastmod>2026-04-28</lastmod>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://tat-bau.de/de/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tat-bau.de/de/about.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tat-bau.de/en/about.html" />
-    <lastmod>2026-04-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://tat-bau.de/en/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tat-bau.de/de/about.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tat-bau.de/en/about.html" />
-    <lastmod>2026-04-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://tat-bau.de/de/products.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tat-bau.de/de/products.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tat-bau.de/en/products.html" />
-    <lastmod>2026-04-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://tat-bau.de/en/products.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tat-bau.de/de/products.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tat-bau.de/en/products.html" />
-    <lastmod>2026-04-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://tat-bau.de/de/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tat-bau.de/de/contact.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tat-bau.de/en/contact.html" />
-    <lastmod>2026-04-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://tat-bau.de/en/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tat-bau.de/de/contact.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tat-bau.de/en/contact.html" />
-    <lastmod>2026-04-28</lastmod>
-    <priority>0.8</priority>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tatbau.de/de/about/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/contact/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/datenschutz/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/galerie/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/impressum/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/kontakt/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/living-rooms/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/mega-menu/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/pages/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/product/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/produkte/exterior_blinds/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/produkte/glass_walls/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/produkte/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/produkte/roller_shutters/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/produkte/sun_protection/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/produkte/windows/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/solidwood/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/turen/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/de/ueber-uns/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/about/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/contact/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/datenschutz/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/galerie/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/impressum/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/kontakt/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/living-rooms/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/mega-menu/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/pages/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/product/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/produkte/exterior_blinds/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/produkte/glass_walls/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/produkte/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/produkte/roller_shutters/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/produkte/sun_protection/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/produkte/windows/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/solidwood/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/turen/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/en/ueber-uns/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tatbau.de/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
