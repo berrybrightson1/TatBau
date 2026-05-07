@@ -3,7 +3,8 @@
 import fs from 'fs';
 import path from 'path';
 
-const ROOT = path.resolve(process.cwd(), 'tatbau-hostinger-static');
+const cwdName = path.basename(process.cwd());
+const ROOT = (cwdName === 'tatbau-hostinger-static') ? process.cwd() : path.resolve(process.cwd(), 'tatbau-hostinger-static');
 
 function walk(dir, acc = []) {
   const items = fs.readdirSync(dir, { withFileTypes: true });
@@ -17,6 +18,11 @@ function walk(dir, acc = []) {
 
 function stripNextJs(content) {
   let c = content;
+  const staticInteractions = [];
+  c = c.replace(/<script[^>]*src="\/static-interactions\.js"[^>]*><\/script>/gi, (match) => {
+    staticInteractions.push(match);
+    return '';
+  });
   // remove link tags and hrefs that reference Next.js assets
   c = c.replace(/<link[^>]*\s+href="\/__next__[^\"]*"[^>]*>/gi, '');
   c = c.replace(/<link[^>]*href="\/_next\/[^"]+"[^>]*>/gi, '');
@@ -34,6 +40,9 @@ function stripNextJs(content) {
 // end of stray block cleanup adjustments; actual scripted removal handled above
   // remove Next.js-specific meta/attributes if present
   c = c.replace(/<meta[^>]*name=\"next-size-adjust\"[^>]*>/gi, '');
+  if (staticInteractions.length && !c.includes('/static-interactions.js')) {
+    c = c.replace('</body>', `${staticInteractions[0]}</body>`);
+  }
   return c;
 }
 
