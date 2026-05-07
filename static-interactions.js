@@ -69,13 +69,7 @@
       var panel = document.createElement("div");
       panel.hidden = true;
       panel.setAttribute("data-static-mobile-menu", "");
-      panel.style.cssText = "position:fixed;inset:0;z-index:80;background:rgba(43,43,43,.98);padding:92px 24px 28px;overflow:auto;";
-
-      var close = document.createElement("button");
-      close.type = "button";
-      close.setAttribute("aria-label", text[lang].close);
-      close.style.cssText = "position:absolute;top:20px;right:20px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:#3a3a3a;color:#f5f5f5;";
-      close.innerHTML = makeIcon('<path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>');
+      panel.style.cssText = "position:absolute;top:100%;left:0;right:0;z-index:80;background:#2b2b2b;padding:16px 24px 24px;border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 18px 40px rgba(0,0,0,.42);";
 
       var links = document.createElement("div");
       links.style.cssText = "display:flex;flex-direction:column;gap:10px;";
@@ -94,24 +88,30 @@
         links.appendChild(ctaClone);
       }
 
-      panel.appendChild(close);
       panel.appendChild(links);
-      document.body.appendChild(panel);
+      header.appendChild(panel);
+
+      var originalIcon = button.innerHTML;
+      var closeIcon = makeIcon('<path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>');
 
       function openMenu() {
         panel.hidden = false;
         button.setAttribute("aria-expanded", "true");
+        button.innerHTML = closeIcon;
         document.documentElement.style.overflow = "hidden";
       }
       function closeMenu() {
         panel.hidden = true;
         button.setAttribute("aria-expanded", "false");
+        button.innerHTML = originalIcon;
         document.documentElement.style.overflow = "";
       }
-      button.addEventListener("click", openMenu);
-      close.addEventListener("click", closeMenu);
+      button.addEventListener("click", function() {
+        if (panel.hidden) openMenu();
+        else closeMenu();
+      });
       panel.addEventListener("click", function (event) {
-        if (event.target.tagName === "A") closeMenu();
+        if (event.target.tagName === "A" || event.target.closest("a")) closeMenu();
       });
       document.addEventListener("keydown", function (event) {
         if (event.key === "Escape" && !panel.hidden) closeMenu();
