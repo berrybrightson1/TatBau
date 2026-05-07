@@ -46,9 +46,9 @@ function main() {
   const items = urls.map(u => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`).join('\n');
   const close = '</urlset>';
   const sitemap = [header, open, items, close].filter(Boolean).join('\n');
-  const sitemapPath = path.join(ROOT, 'sitemap.xml');
+  const sitemapPath = path.join(ROOT, 'sitemap_V1.xml');
   fs.writeFileSync(sitemapPath, sitemap, 'utf8');
-  console.log('sitemap.xml generated with', urls.length, 'URLs at', sitemapPath);
+  console.log('sitemap_V1.xml generated with', urls.length, 'URLs at', sitemapPath);
 }
 
 main();

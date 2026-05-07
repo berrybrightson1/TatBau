@@ -4,8 +4,8 @@ This repository now includes the technical SEO foundation needed for a static de
 
 ## Already implemented
 
-- `sitemap.xml` at project root with bilingual DE/EN URLs and hreflang alternates.
-- `robots.txt` at project root with sitemap reference.
+- `sitemap_V1.xml` at project root with bilingual DE/EN URLs and hreflang alternates.
+- `robots_V1.txt` at project root with sitemap reference.
 - Shared metadata in `src/app/[locale]/layout.tsx`:
   - production `metadataBase` (`https://tat-bau.de`)
   - index/follow robots directives

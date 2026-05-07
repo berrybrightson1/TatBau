@@ -38,8 +38,8 @@ function main() {
       ok = false;
     }
   }
-  if (!fs.existsSync(path.join(ROOT, 'sitemap.xml'))) {
-    console.error('Missing sitemap.xml in site root');
+  if (!fs.existsSync(path.join(ROOT, 'sitemap_V1.xml'))) {
+    console.error('Missing sitemap_V1.xml in site root');
     ok = false;
   }
   if (!fs.existsSync(path.join(ROOT, '404.html'))) {
